@@ -1,0 +1,226 @@
+{
+  "test_cases": [
+    {
+      "id": "TC001",
+      "name": "Verify successful login with valid credentials",
+      "type": "functional_positive",
+      "category": "authentication",
+      "priority": "high",
+      "steps": [
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button"
+      ],
+      "expected_result": "User should be redirected to dashboard",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "username_field",
+            "selector": "input[name='username']"
+          },
+          {
+            "name": "password_field",
+            "selector": "input[name='password']"
+          },
+          {
+            "name": "login_button",
+            "selector": "button[type='submit']"
+          }
+        ],
+        "verification_elements": [
+          {
+            "name": "dashboard_header",
+            "selector": "h6.oxd-text"
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC002",
+      "name": "Verify unsuccessful login with invalid credentials",
+      "type": "functional_negative",
+      "category": "authentication",
+      "priority": "medium",
+      "steps": [
+        "Enter invalid username",
+        "Enter invalid password",
+        "Click login button"
+      ],
+      "expected_result": "Error message should be displayed",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "username_field",
+            "selector": "input[name='username']"
+          },
+          {
+            "name": "password_field",
+            "selector": "input[name='password']"
+          },
+          {
+            "name": "login_button",
+            "selector": "button[type='submit']"
+          }
+        ],
+        "verification_elements": [
+          {
+            "name": "error_message",
+            "selector": "div#error-message"
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC003",
+      "name": "Verify layout and appearance of the page",
+      "type": "ui_layout",
+      "category": "layout",
+      "priority": "low",
+      "steps": [
+        "Access the webpage",
+        "Verify the layout and appearance of the page"
+      ],
+      "expected_result": "The page layout and appearance should match the expected design",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "page_header",
+            "selector": "header"
+          },
+          {
+            "name": "page_footer",
+            "selector": "footer"
+          }
+        ],
+        "verification_elements": []
+      }
+    },
+    {
+      "id": "TC004",
+      "name": "Verify responsiveness of the page",
+      "type": "ui_responsiveness",
+      "category": "layout",
+      "priority": "medium",
+      "steps": [
+        "Access the webpage on different devices and screen sizes",
+        "Verify that the page layout adapts to the screen size"
+      ],
+      "expected_result": "The page layout should adapt to the screen size",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "page_header",
+            "selector": "header"
+          },
+          {
+            "name": "page_footer",
+            "selector": "footer"
+          }
+        ],
+        "verification_elements": []
+      }
+    },
+    {
+      "id": "TC005",
+      "name": "Verify navigation menu functionality",
+      "type": "ui_navigation",
+      "category": "navigation",
+      "priority": "medium",
+      "steps": [
+        "Access the webpage",
+        "Click on the navigation menu items"
+      ],
+      "expected_result": "The navigation menu items should redirect to the correct pages",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "nav_menu",
+            "selector": "nav"
+          }
+        ],
+        "verification_elements": [
+          {
+            "name": "nav_item_1",
+            "selector": "nav > ul > li:first-child"
+          },
+          {
+            "name": "nav_item_2",
+            "selector": "nav > ul > li:nth-child(2)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC006",
+      "name": "Verify input validation for username field",
+      "type": "security_input_validation",
+      "category": "security",
+      "priority": "high",
+      "steps": [
+        "Enter invalid username",
+        "Click on the submit button"
+      ],
+      "expected_result": "Error message should be displayed for invalid username",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "username_field",
+            "selector": "input[name='username']"
+          }
+        ],
+        "verification_elements": [
+          {
+            "name": "error_message",
+            "selector": "div#error-message"
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC007",
+      "name": "Verify load time of the webpage",
+      "type": "performance_load_time",
+      "category": "performance",
+      "priority": "low",
+      "steps": [
+        "Access the webpage",
+        "Measure the load time of the webpage"
+      ],
+      "expected_result": "The webpage should load within 3 seconds",
+      "selectors": {
+        "target_elements": [],
+        "verification_elements": []
+      }
+    },
+    {
+      "id": "TC008",
+      "name": "Verify form validation for login form",
+      "type": "data_validation_form",
+      "category": "data_validation",
+      "priority": "medium",
+      "steps": [
+        "Enter invalid username and password",
+        "Click on the submit button"
+      ],
+      "expected_result": "Error message should be displayed for invalid username and password",
+      "selectors": {
+        "target_elements": [
+          {
+            "name": "username_field",
+            "selector": "input[name='username']"
+          },
+          {
+            "name": "password_field",
+            "selector": "input[name='password']"
+          }
+        ],
+        "verification_elements": [
+          {
+            "name": "error_message",
+            "selector": "div#error-message"
+          }
+        ]
+      }
+    }
+  ]
+}

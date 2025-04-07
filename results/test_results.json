@@ -1,0 +1,66 @@
+[
+  {
+    "test_case_id": "TC001",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "2025-04-05 11:03:35,690 - INFO - Initializing Chrome WebDriver...\n2025-04-05 11:03:36,101 - INFO - Chrome WebDriver initialized successfully.\n2025-04-05 11:03:36,101 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/...\n2025-04-05 11:03:38,750 - INFO - Waiting for username field...\n2025-04-05 11:03:38,796 - INFO - Username entered.\n2025-04-05 11:03:38,796 - INFO - Waiting for password field...\n2025-04-05 11:03:38,826 - INFO - Password entered.\n2025-04-05 11:03:38,826 - INFO - Waiting for login button...\n2025-04-05 11:03:49,246 - ERROR - Failed to perform login: Message: \nStacktrace:\n#0 0x6466f8b771fa <unknown>\n#1 0x6466f8687810 <unknown>\n#2 0x6466f86d6506 <unknown>\n#3 0x6466f86d67a1 <unknown>\n#4 0x6466f871bc24 <unknown>\n#5 0x6466f86fa5ad <unknown>\n#6 0x6466f8719007 <unknown>\n#7 0x6466f86fa323 <unknown>\n#8 0x6466f86c8de0 <unknown>\n#9 0x6466f86c9dbe <unknown>\n#10 0x6466f8b4312b <unknown>\n#11 0x6466f8b470c7 <unknown>\n#12 0x6466f8b306cc <unknown>\n#13 0x6466f8b47c47 <unknown>\n#14 0x6466f8b1567f <unknown>\n#15 0x6466f8b66288 <unknown>\n#16 0x6466f8b66450 <unknown>\n#17 0x6466f8b76076 <unknown>\n#18 0x7af466e94ac3 <unknown>",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC001_20250405_110335.py"
+  },
+  {
+    "test_case_id": "TC002",
+    "exit_code": 0,
+    "stdout": "Navigated to https://practicetestautomation.com/practice-test-login/\nError logging in: Message: \nStacktrace:\n#0 0x59d7a2d521fa <unknown>\n#1 0x59d7a2862810 <unknown>\n#2 0x59d7a28b1506 <unknown>\n#3 0x59d7a28b17a1 <unknown>\n#4 0x59d7a28f6c24 <unknown>\n#5 0x59d7a28d55ad <unknown>\n#6 0x59d7a28f4007 <unknown>\n#7 0x59d7a28d5323 <unknown>\n#8 0x59d7a28a3de0 <unknown>\n#9 0x59d7a28a4dbe <unknown>\n#10 0x59d7a2d1e12b <unknown>\n#11 0x59d7a2d220c7 <unknown>\n#12 0x59d7a2d0b6cc <unknown>\n#13 0x59d7a2d22c47 <unknown>\n#14 0x59d7a2cf067f <unknown>\n#15 0x59d7a2d41288 <unknown>\n#16 0x59d7a2d41450 <unknown>\n#17 0x59d7a2d51076 <unknown>\n#18 0x72d069294ac3 <unknown>\n\nTest case TC002 failed: Message: \nStacktrace:\n#0 0x59d7a2d521fa <unknown>\n#1 0x59d7a2862810 <unknown>\n#2 0x59d7a28b1506 <unknown>\n#3 0x59d7a28b17a1 <unknown>\n#4 0x59d7a28f6c24 <unknown>\n#5 0x59d7a28d55ad <unknown>\n#6 0x59d7a28f4007 <unknown>\n#7 0x59d7a28d5323 <unknown>\n#8 0x59d7a28a3de0 <unknown>\n#9 0x59d7a28a4dbe <unknown>\n#10 0x59d7a2d1e12b <unknown>\n#11 0x59d7a2d220c7 <unknown>\n#12 0x59d7a2d0b6cc <unknown>\n#13 0x59d7a2d22c47 <unknown>\n#14 0x59d7a2cf067f <unknown>\n#15 0x59d7a2d41288 <unknown>\n#16 0x59d7a2d41450 <unknown>\n#17 0x59d7a2d51076 <unknown>\n#18 0x72d069294ac3 <unknown>\n\nTest case TC002 failed",
+    "stderr": "",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC002_20250405_110353.py"
+  },
+  {
+    "test_case_id": "TC003",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "2025-04-05 11:04:23,230 - INFO - Setting up Chrome WebDriver...\n2025-04-05 11:04:23,412 - INFO - Chrome WebDriver set up successfully.\n2025-04-05 11:04:23,412 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/...\n2025-04-05 11:04:26,123 - INFO - Successfully navigated to https://practicetestautomation.com/practice-test-login/.\n2025-04-05 11:04:26,124 - INFO - Performing login...\n2025-04-05 11:04:36,590 - ERROR - Failed to perform login: Message: \nStacktrace:\n#0 0x5df5794971fa <unknown>\n#1 0x5df578fa7810 <unknown>\n#2 0x5df578ff6506 <unknown>\n#3 0x5df578ff67a1 <unknown>\n#4 0x5df57903bc24 <unknown>\n#5 0x5df57901a5ad <unknown>\n#6 0x5df579039007 <unknown>\n#7 0x5df57901a323 <unknown>\n#8 0x5df578fe8de0 <unknown>\n#9 0x5df578fe9dbe <unknown>\n#10 0x5df57946312b <unknown>\n#11 0x5df5794670c7 <unknown>\n#12 0x5df5794506cc <unknown>\n#13 0x5df579467c47 <unknown>\n#14 0x5df57943567f <unknown>\n#15 0x5df579486288 <unknown>\n#16 0x5df579486450 <unknown>\n#17 0x5df579496076 <unknown>\n#18 0x701e1bc94ac3 <unknown>\n\n2025-04-05 11:04:36,590 - ERROR - Test case TC003 failed: Unable to perform login.",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC003_20250405_110423.py"
+  },
+  {
+    "test_case_id": "TC004",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "2025-04-05 11:04:43,139 - ERROR - Test Case TC004 failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location\n\n2025-04-05 11:04:43,139 - ERROR - Error quitting WebDriver: local variable 'driver' referenced before assignment",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC004_20250405_110443.py"
+  },
+  {
+    "test_case_id": "TC005",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "2025-04-05 11:04:48,398 - INFO - Selenium WebDriver set up\n2025-04-05 11:04:49,914 - INFO - Navigated to the login page: https://practicetestautomation.com/practice-test-login/login.html\n2025-04-05 11:05:00,316 - ERROR - Username field not found\n2025-04-05 11:05:00,316 - ERROR - Login failed",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC005_20250405_110447.py"
+  },
+  {
+    "test_case_id": "TC006",
+    "exit_code": 0,
+    "stdout": "Test case TC006 failed",
+    "stderr": "2025-04-05 11:05:12,380 - INFO - Successfully navigated to https://practicetestautomation.com/practice-test-login/\n2025-04-05 11:05:12,429 - INFO - Entered username: student\n2025-04-05 11:05:12,459 - INFO - Entered password: Password123\n2025-04-05 11:05:22,889 - ERROR - Failed to perform login: Message: \nStacktrace:\n#0 0x5f0e64c161fa <unknown>\n#1 0x5f0e64726810 <unknown>\n#2 0x5f0e64775506 <unknown>\n#3 0x5f0e647757a1 <unknown>\n#4 0x5f0e647bac24 <unknown>\n#5 0x5f0e647995ad <unknown>\n#6 0x5f0e647b8007 <unknown>\n#7 0x5f0e64799323 <unknown>\n#8 0x5f0e64767de0 <unknown>\n#9 0x5f0e64768dbe <unknown>\n#10 0x5f0e64be212b <unknown>\n#11 0x5f0e64be60c7 <unknown>\n#12 0x5f0e64bcf6cc <unknown>\n#13 0x5f0e64be6c47 <unknown>\n#14 0x5f0e64bb467f <unknown>\n#15 0x5f0e64c05288 <unknown>\n#16 0x5f0e64c05450 <unknown>\n#17 0x5f0e64c15076 <unknown>\n#18 0x7b73c6094ac3 <unknown>\n\n2025-04-05 11:05:22,921 - INFO - Entered invalid username: invalid_username\n2025-04-05 11:05:33,336 - ERROR - Failed to execute test steps: Message: \nStacktrace:\n#0 0x5f0e64c161fa <unknown>\n#1 0x5f0e64726810 <unknown>\n#2 0x5f0e64775506 <unknown>\n#3 0x5f0e647757a1 <unknown>\n#4 0x5f0e647bac24 <unknown>\n#5 0x5f0e647995ad <unknown>\n#6 0x5f0e647b8007 <unknown>\n#7 0x5f0e64799323 <unknown>\n#8 0x5f0e64767de0 <unknown>\n#9 0x5f0e64768dbe <unknown>\n#10 0x5f0e64be212b <unknown>\n#11 0x5f0e64be60c7 <unknown>\n#12 0x5f0e64bcf6cc <unknown>\n#13 0x5f0e64be6c47 <unknown>\n#14 0x5f0e64bb467f <unknown>\n#15 0x5f0e64c05288 <unknown>\n#16 0x5f0e64c05450 <unknown>\n#17 0x5f0e64c15076 <unknown>\n#18 0x7b73c6094ac3 <unknown>\n\n2025-04-05 11:05:33,336 - ERROR - Test case TC006 failed",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC006_20250405_110507.py"
+  },
+  {
+    "test_case_id": "TC007",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "2025-04-05 11:05:40,041 - INFO - Setting up the Selenium WebDriver with Chrome...\n2025-04-05 11:05:40,459 - INFO - Navigating to the URL: https://practicetestautomation.com/practice-test-login/...\n2025-04-05 11:05:44,945 - INFO - Waiting for the username field to be clickable...\n2025-04-05 11:05:44,966 - INFO - Entering the username...\n2025-04-05 11:05:44,999 - INFO - Waiting for the password field to be clickable...\n2025-04-05 11:05:45,014 - INFO - Entering the password...\n2025-04-05 11:05:45,038 - INFO - Waiting for the login button to be clickable...\n2025-04-05 11:05:55,463 - ERROR - Failed to perform the login operation: Message: \nStacktrace:\n#0 0x5acc7b1291fa <unknown>\n#1 0x5acc7ac39810 <unknown>\n#2 0x5acc7ac88506 <unknown>\n#3 0x5acc7ac887a1 <unknown>\n#4 0x5acc7accdc24 <unknown>\n#5 0x5acc7acac5ad <unknown>\n#6 0x5acc7accb007 <unknown>\n#7 0x5acc7acac323 <unknown>\n#8 0x5acc7ac7ade0 <unknown>\n#9 0x5acc7ac7bdbe <unknown>\n#10 0x5acc7b0f512b <unknown>\n#11 0x5acc7b0f90c7 <unknown>\n#12 0x5acc7b0e26cc <unknown>\n#13 0x5acc7b0f9c47 <unknown>\n#14 0x5acc7b0c767f <unknown>\n#15 0x5acc7b118288 <unknown>\n#16 0x5acc7b118450 <unknown>\n#17 0x5acc7b128076 <unknown>\n#18 0x7a926e894ac3 <unknown>\n\n2025-04-05 11:05:55,468 - INFO - Test Case TC007: FAIL - The webpage took 4.465 seconds to load, which exceeds the expected load time of 3 seconds.",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC007_20250405_110539.py"
+  },
+  {
+    "test_case_id": "TC008",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/home/ankits/Desktop/autotest/autotest/test_script_TC008.py\", line 7, in <module>\n    from webdriver_manager.chrome import ChromeDriverManager\nModuleNotFoundError: No module named 'webdriver_manager'",
+    "status": "FAIL",
+    "script_file": "scripts/test_script_TC008_20250405_110600.py"
+  }
+]
