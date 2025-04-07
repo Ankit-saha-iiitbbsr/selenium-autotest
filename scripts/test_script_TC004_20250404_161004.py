@@ -1,0 +1,1 @@
+Syntax error: expected an indented block after 'finally' statement on line 162 (test_script_TC004.py, line 164)
