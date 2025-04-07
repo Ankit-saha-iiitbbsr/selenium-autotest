@@ -1,0 +1,211 @@
+2025-04-05 10:50:54,856 - INFO - Starting new test run at 20250405_105054
+2025-04-05 10:50:54,856 - INFO - Starting test generation for URL: https://practicetestautomation.com/practice-test-login/
+2025-04-05 10:50:54,856 - INFO - Navigating to URL: https://practicetestautomation.com/practice-test-login/
+2025-04-05 10:50:58,324 - INFO - Login successful!
+2025-04-05 10:50:58,491 - INFO - Generating test cases...
+2025-04-05 10:50:58,491 - INFO - Generating test cases for the current page...
+2025-04-05 10:50:58,570 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250405_105058.png
+2025-04-05 10:50:58,570 - INFO - Sending request to LLM for test case generation...
+2025-04-05 10:51:02,371 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:51:02,376 - INFO - Received response from LLM
+2025-04-05 10:51:02,376 - INFO - Successfully parsed 5 test cases
+2025-04-05 10:51:02,376 - INFO - Generated test case: TC001 - Verify page title (positive)
+2025-04-05 10:51:02,376 - INFO - Generated test case: TC002 - Verify meta tags (positive)
+2025-04-05 10:51:02,376 - INFO - Generated test case: TC003 - Verify header elements (positive)
+2025-04-05 10:51:02,376 - INFO - Generated test case: TC004 - Verify CSS styles (positive)
+2025-04-05 10:51:02,376 - INFO - Generated test case: TC005 - Verify negative - invalid URL (negative)
+2025-04-05 10:51:02,376 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-05 10:51:02,376 - INFO - 
+Processing test case: TC001 - Verify page title
+2025-04-05 10:51:02,376 - INFO - Generating Selenium script for test case TC001 - Verify page title
+2025-04-05 10:51:02,517 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-05 10:51:02,518 - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-04-05 10:51:12,407 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:51:12,432 - INFO - Executing test script for test case TC001
+2025-04-05 10:51:12,433 - INFO - Running script: test_script_TC001.py
+2025-04-05 10:51:36,074 - INFO - Script execution completed with exit code: 0
+2025-04-05 10:51:36,074 - INFO - Standard output: Test case TC001 failed.
+2025-04-05 10:51:36,074 - WARNING - Standard error: 2025-04-05 10:51:12,526 - INFO - Setting up Selenium WebDriver...
+2025-04-05 10:51:12,946 - INFO - Selenium WebDriver setup complete.
+2025-04-05 10:51:12,946 - INFO - Executing test case TC001...
+2025-04-05 10:51:12,946 - INFO - Navigating to URL: https://practicetestautomation.com/practice-test-login/
+2025-04-05 10:51:15,354 - INFO - Performing login...
+2025-04-05 10:51:25,836 - ERROR - Login failed: Message: 
+Stacktrace:
+#0 0x56d4ea1b41fa <unknown>
+#1 0x56d4e9cc4810 <unknown>
+#2 0x56d4e9d13506 <unknown>
+#3 0x56d4e9d137a1 <unknown>
+#4 0x56d4e9d58c24 <unknown>
+#5 0x56d4e9d375ad <unknown>
+#6 0x56d4e9d56007 <unknown>
+#7 0x56d4e9d37323 <unknown>
+#8 0x56d4e9d05de0 <unknown>
+#9 0x56d4e9d06dbe <unknown>
+#10 0x56d4ea18012b <unknown>
+#11 0x56d4ea1840c7 <unknown>
+#12 0x56d4ea16d6cc <unknown>
+#13 0x56d4ea184c47 <unknown>
+#14 0x56d4ea15267f <unknown>
+#15 0x56d4ea1a3288 <unknown>
+#16 0x56d4ea1a3450 <unknown>
+#17 0x56d4ea1b3076 <unknown>
+#18 0x736176694ac3 <unknown>
+
+2025-04-05 10:51:25,836 - INFO - Verifying page title...
+2025-04-05 10:51:35,985 - ERROR - Page title verification failed: Timed out waiting for the expected title.
+2025-04-05 10:51:35,985 - ERROR - Test case TC001 failed: Page title does not match the expected title.
+2025-04-05 10:51:36,074 - INFO - Test case TC001 execution status: FAIL
+2025-04-05 10:51:36,074 - INFO - 
+Processing test case: TC002 - Verify meta tags
+2025-04-05 10:51:36,074 - INFO - Generating Selenium script for test case TC002 - Verify meta tags
+2025-04-05 10:51:40,945 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:51:40,947 - INFO - Executing test script for test case TC002
+2025-04-05 10:51:40,948 - INFO - Running script: test_script_TC002.py
+2025-04-05 10:52:05,200 - INFO - Script execution completed with exit code: 0
+2025-04-05 10:52:05,200 - INFO - Standard output: 
+2025-04-05 10:52:05,200 - WARNING - Standard error: 2025-04-05 10:51:41,045 - INFO - Setting up Chrome WebDriver...
+2025-04-05 10:51:41,439 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/...
+2025-04-05 10:51:54,737 - ERROR - Failed to perform login due to timeout.
+2025-04-05 10:52:05,113 - ERROR - Failed to verify meta tags due to timeout.
+2025-04-05 10:52:05,113 - ERROR - Test case TC002 failed: Meta tags are missing or invalid.
+2025-04-05 10:52:05,201 - INFO - Test case TC002 execution status: FAIL
+2025-04-05 10:52:05,201 - INFO - 
+Processing test case: TC003 - Verify header elements
+2025-04-05 10:52:05,201 - INFO - Generating Selenium script for test case TC003 - Verify header elements
+2025-04-05 10:52:09,082 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:52:09,084 - INFO - Executing test script for test case TC003
+2025-04-05 10:52:09,085 - INFO - Running script: test_script_TC003.py
+2025-04-05 10:52:13,039 - INFO - Script execution completed with exit code: 0
+2025-04-05 10:52:13,039 - INFO - Standard output: An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button[type='submit']"}
+  (Session info: chrome=131.0.6778.204); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5a7cd84f21fa <unknown>
+#1 0x5a7cd8002810 <unknown>
+#2 0x5a7cd8051506 <unknown>
+#3 0x5a7cd80517a1 <unknown>
+#4 0x5a7cd8096c24 <unknown>
+#5 0x5a7cd80755ad <unknown>
+#6 0x5a7cd8094007 <unknown>
+#7 0x5a7cd8075323 <unknown>
+#8 0x5a7cd8043de0 <unknown>
+#9 0x5a7cd8044dbe <unknown>
+#10 0x5a7cd84be12b <unknown>
+#11 0x5a7cd84c20c7 <unknown>
+#12 0x5a7cd84ab6cc <unknown>
+#13 0x5a7cd84c2c47 <unknown>
+#14 0x5a7cd849067f <unknown>
+#15 0x5a7cd84e1288 <unknown>
+#16 0x5a7cd84e1450 <unknown>
+#17 0x5a7cd84f1076 <unknown>
+#18 0x7ed0c5494ac3 <unknown>
+. Test case TC003 failed.
+2025-04-05 10:52:13,039 - INFO - Test case TC003 execution status: FAIL
+2025-04-05 10:52:13,039 - INFO - 
+Processing test case: TC004 - Verify CSS styles
+2025-04-05 10:52:13,039 - INFO - Generating Selenium script for test case TC004 - Verify CSS styles
+2025-04-05 10:52:16,790 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:52:16,792 - INFO - Executing test script for test case TC004
+2025-04-05 10:52:16,792 - INFO - Running script: test_script_TC004.py
+2025-04-05 10:52:30,247 - INFO - Script execution completed with exit code: 0
+2025-04-05 10:52:30,247 - INFO - Standard output: 
+2025-04-05 10:52:30,247 - WARNING - Standard error: 2025-04-05 10:52:19,650 - INFO - Navigated to https://practicetestautomation.com/practice-test-login/
+2025-04-05 10:52:19,697 - INFO - Entered username
+2025-04-05 10:52:19,727 - INFO - Entered password
+2025-04-05 10:52:30,146 - ERROR - Failed to perform login: Message: 
+Stacktrace:
+#0 0x585b49ee81fa <unknown>
+#1 0x585b499f8810 <unknown>
+#2 0x585b49a47506 <unknown>
+#3 0x585b49a477a1 <unknown>
+#4 0x585b49a8cc24 <unknown>
+#5 0x585b49a6b5ad <unknown>
+#6 0x585b49a8a007 <unknown>
+#7 0x585b49a6b323 <unknown>
+#8 0x585b49a39de0 <unknown>
+#9 0x585b49a3adbe <unknown>
+#10 0x585b49eb412b <unknown>
+#11 0x585b49eb80c7 <unknown>
+#12 0x585b49ea16cc <unknown>
+#13 0x585b49eb8c47 <unknown>
+#14 0x585b49e8667f <unknown>
+#15 0x585b49ed7288 <unknown>
+#16 0x585b49ed7450 <unknown>
+#17 0x585b49ee7076 <unknown>
+#18 0x7eeb99494ac3 <unknown>
+
+2025-04-05 10:52:30,165 - INFO - Retrieved CSS style content
+2025-04-05 10:52:30,165 - INFO - Verified CSS style content
+2025-04-05 10:52:30,165 - INFO - Test TC004 passed: CSS styles verified
+2025-04-05 10:52:30,247 - INFO - Test case TC004 execution status: FAIL
+2025-04-05 10:52:30,247 - INFO - 
+Processing test case: TC005 - Verify negative - invalid URL
+2025-04-05 10:52:30,247 - INFO - Generating Selenium script for test case TC005 - Verify negative - invalid URL
+2025-04-05 10:52:35,648 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 10:52:35,650 - INFO - Executing test script for test case TC005
+2025-04-05 10:52:35,650 - INFO - Running script: test_script_TC005.py
+2025-04-05 10:53:01,245 - INFO - Script execution completed with exit code: 0
+2025-04-05 10:53:01,246 - INFO - Standard output: 
+2025-04-05 10:53:01,246 - WARNING - Standard error: 2025-04-05 10:52:35,755 - INFO - Setting up the Chrome WebDriver
+2025-04-05 10:52:36,178 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/
+2025-04-05 10:52:38,602 - INFO - Navigating to the login page
+2025-04-05 10:52:38,727 - INFO - Waiting for the username field
+2025-04-05 10:52:38,744 - INFO - Entering the username
+2025-04-05 10:52:38,796 - INFO - Waiting for the password field
+2025-04-05 10:52:38,805 - INFO - Entering the password
+2025-04-05 10:52:38,827 - INFO - Waiting for the login button
+2025-04-05 10:52:49,269 - ERROR - Failed to login: Message: 
+Stacktrace:
+#0 0x5e6b427221fa <unknown>
+#1 0x5e6b42232810 <unknown>
+#2 0x5e6b42281506 <unknown>
+#3 0x5e6b422817a1 <unknown>
+#4 0x5e6b422c6c24 <unknown>
+#5 0x5e6b422a55ad <unknown>
+#6 0x5e6b422c4007 <unknown>
+#7 0x5e6b422a5323 <unknown>
+#8 0x5e6b42273de0 <unknown>
+#9 0x5e6b42274dbe <unknown>
+#10 0x5e6b426ee12b <unknown>
+#11 0x5e6b426f20c7 <unknown>
+#12 0x5e6b426db6cc <unknown>
+#13 0x5e6b426f2c47 <unknown>
+#14 0x5e6b426c067f <unknown>
+#15 0x5e6b42711288 <unknown>
+#16 0x5e6b42711450 <unknown>
+#17 0x5e6b42721076 <unknown>
+#18 0x7ab112c94ac3 <unknown>
+
+2025-04-05 10:52:49,270 - INFO - Loading an invalid URL
+2025-04-05 10:52:50,720 - INFO - Waiting for the error message
+2025-04-05 10:53:01,153 - ERROR - Failed to execute test steps: Message: 
+Stacktrace:
+#0 0x5e6b427221fa <unknown>
+#1 0x5e6b42232810 <unknown>
+#2 0x5e6b42281506 <unknown>
+#3 0x5e6b422817a1 <unknown>
+#4 0x5e6b422c6c24 <unknown>
+#5 0x5e6b422a55ad <unknown>
+#6 0x5e6b422c4007 <unknown>
+#7 0x5e6b422a5323 <unknown>
+#8 0x5e6b42273de0 <unknown>
+#9 0x5e6b42274dbe <unknown>
+#10 0x5e6b426ee12b <unknown>
+#11 0x5e6b426f20c7 <unknown>
+#12 0x5e6b426db6cc <unknown>
+#13 0x5e6b426f2c47 <unknown>
+#14 0x5e6b426c067f <unknown>
+#15 0x5e6b42711288 <unknown>
+#16 0x5e6b42711450 <unknown>
+#17 0x5e6b42721076 <unknown>
+#18 0x7ab112c94ac3 <unknown>
+
+2025-04-05 10:53:01,153 - INFO - Test case TC005 failed
+2025-04-05 10:53:01,246 - INFO - Test case TC005 execution status: FAIL
+2025-04-05 10:53:01,246 - INFO - 
+Test execution summary:
+2025-04-05 10:53:01,246 - INFO - Total test cases: 5
+2025-04-05 10:53:01,246 - INFO - Passed: 0 (0.00%)
+2025-04-05 10:53:01,246 - INFO - Failed: 5
+2025-04-05 10:53:01,246 - INFO - Errors: 0
+2025-04-05 10:53:01,246 - INFO - Timeouts: 0

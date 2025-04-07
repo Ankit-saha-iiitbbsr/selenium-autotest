@@ -1,0 +1,177 @@
+2025-04-03 13:25:49,281 - INFO - Starting new test run at 20250403_132549
+2025-04-03 13:25:49,281 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 13:25:49,282 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 13:25:52,335 - INFO - Capturing initial page state...
+2025-04-03 13:25:52,550 - INFO - Screenshot saved to screenshots/before_login_20250403_132552.png
+2025-04-03 13:25:52,550 - INFO - --- Current page state (before_login) ---
+2025-04-03 13:25:52,553 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 13:25:52,627 - INFO - Screenshot saved to screenshots/page_state_before_login_20250403_132552.png
+2025-04-03 13:25:52,637 - INFO - Found 58 elements on page
+2025-04-03 13:25:52,675 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-03 13:25:52,695 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-03 13:25:52,716 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-03 13:25:52,743 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 13:25:52,766 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 13:25:52,781 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-03 13:25:52,800 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-03 13:25:52,821 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-03 13:25:52,845 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-03 13:25:52,872 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 13:25:52,872 - INFO - --- End of page state ---
+2025-04-03 13:25:52,874 - INFO - Analyzing login page...
+2025-04-03 13:25:55,116 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:25:55,121 - INFO - Login attempt with username: Ankit.s
+2025-04-03 13:25:55,121 - INFO - Using selectors - Username: input[name='txtName'], Password: input[name='txtPassword'], Submit: input[type='submit']
+2025-04-03 13:25:58,814 - INFO - Screenshot saved to screenshots/after_login_20250403_132558.png
+2025-04-03 13:25:58,814 - INFO - --- Current page state (after_login) ---
+2025-04-03 13:25:58,816 - INFO - Current URL: https://ourgoalplan.co.in/GoalSheet.aspx
+2025-04-03 13:25:58,895 - INFO - Screenshot saved to screenshots/page_state_after_login_20250403_132558.png
+2025-04-03 13:25:58,924 - INFO - Found 489 elements on page
+2025-04-03 13:25:58,986 - INFO - Element 1: <html> id='' class='' text='Celebrating a quarter-century of quirky ideas, bol...'
+2025-04-03 13:25:59,012 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 13:25:59,027 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 13:25:59,046 - INFO - Element 4: <link> id='' class='' text=''
+2025-04-03 13:25:59,063 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-03 13:25:59,087 - INFO - Element 6: <link> id='' class='' text=''
+2025-04-03 13:25:59,101 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 13:25:59,133 - INFO - Element 8: <script> id='' class='' text=''
+2025-04-03 13:25:59,148 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-03 13:25:59,169 - INFO - Element 10: <script> id='' class='' text=''
+2025-04-03 13:25:59,169 - INFO - --- End of page state ---
+2025-04-03 13:25:59,393 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 13:25:59,394 - INFO - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-04-03 13:26:05,350 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:26:05,352 - INFO - Login successful!
+2025-04-03 13:26:05,352 - INFO - Generating test cases...
+2025-04-03 13:26:05,352 - INFO - Generating test cases for the current page...
+2025-04-03 13:26:05,433 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250403_132605.png
+2025-04-03 13:26:05,433 - INFO - Sending request to LLM for test case generation...
+2025-04-03 13:26:05,615 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 13:26:05,615 - INFO - Retrying request to /openai/v1/chat/completions in 43.000000 seconds
+2025-04-03 13:26:52,295 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:26:52,297 - INFO - Received response from LLM
+2025-04-03 13:26:52,297 - INFO - Successfully parsed 5 test cases
+2025-04-03 13:26:52,297 - INFO - Generated test case: TC001 - Verify successful login with valid credentials (positive)
+2025-04-03 13:26:52,297 - INFO - Generated test case: TC002 - Verify failed login with invalid credentials (negative)
+2025-04-03 13:26:52,297 - INFO - Generated test case: TC003 - Verify date picker functionality (positive)
+2025-04-03 13:26:52,298 - INFO - Generated test case: TC004 - Verify add goal functionality (positive)
+2025-04-03 13:26:52,298 - INFO - Generated test case: TC005 - Verify override absence functionality (positive)
+2025-04-03 13:26:52,298 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-03 13:26:52,298 - INFO - 
+Processing test case: TC001 - Verify successful login with valid credentials
+2025-04-03 13:26:52,298 - INFO - Generating Selenium script for test case TC001 - Verify successful login with valid credentials
+2025-04-03 13:26:52,382 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 13:26:52,383 - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-04-03 13:27:00,956 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:27:00,958 - INFO - Executing test script for test case TC001
+2025-04-03 13:27:00,959 - INFO - Running script: test_script_TC001.py
+2025-04-03 13:27:00,984 - INFO - Script execution completed with exit code: 1
+2025-04-03 13:27:00,985 - INFO - Standard output: 
+2025-04-03 13:27:00,985 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 105
+    print(f"Test case TC001 PASSED: Successfully executed Verify successful login with valid credentials")
+    ^
+IndentationError: expected an indented block after 'finally' statement on line 103
+2025-04-03 13:27:00,985 - INFO - Test case TC001 execution status: FAIL
+2025-04-03 13:27:00,985 - INFO - 
+Processing test case: TC002 - Verify failed login with invalid credentials
+2025-04-03 13:27:00,985 - INFO - Generating Selenium script for test case TC002 - Verify failed login with invalid credentials
+2025-04-03 13:27:01,162 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 13:27:01,163 - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-04-03 13:27:16,624 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:27:16,631 - INFO - Executing test script for test case TC002
+2025-04-03 13:27:16,631 - INFO - Running script: test_script_TC002.py
+2025-04-03 13:27:39,314 - INFO - Script execution completed with exit code: 0
+2025-04-03 13:27:39,315 - INFO - Standard output: Navigated to https://ourgoalplan.co.in/Login.aspx
+Error performing login: Message: 
+Stacktrace:
+#0 0x5acd5df511fa <unknown>
+#1 0x5acd5da61810 <unknown>
+#2 0x5acd5dab0506 <unknown>
+#3 0x5acd5dab07a1 <unknown>
+#4 0x5acd5daf5c24 <unknown>
+#5 0x5acd5dad45ad <unknown>
+#6 0x5acd5daf3007 <unknown>
+#7 0x5acd5dad4323 <unknown>
+#8 0x5acd5daa2de0 <unknown>
+#9 0x5acd5daa3dbe <unknown>
+#10 0x5acd5df1d12b <unknown>
+#11 0x5acd5df210c7 <unknown>
+#12 0x5acd5df0a6cc <unknown>
+#13 0x5acd5df21c47 <unknown>
+#14 0x5acd5deef67f <unknown>
+#15 0x5acd5df40288 <unknown>
+#16 0x5acd5df40450 <unknown>
+#17 0x5acd5df50076 <unknown>
+#18 0x749baf894ac3 <unknown>
+
+Error message not displayed within 10 seconds
+Test Case TC002: FAIL
+Test case TC002 PASSED: Successfully executed Verify failed login with invalid credentials
+2025-04-03 13:27:39,315 - INFO - Test case TC002 execution status: PASS
+2025-04-03 13:27:39,315 - INFO - 
+Processing test case: TC003 - Verify date picker functionality
+2025-04-03 13:27:39,315 - INFO - Generating Selenium script for test case TC003 - Verify date picker functionality
+2025-04-03 13:27:44,174 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:27:44,176 - INFO - Executing test script for test case TC003
+2025-04-03 13:27:44,176 - INFO - Running script: test_script_TC003.py
+2025-04-03 13:27:44,300 - INFO - Script execution completed with exit code: 0
+2025-04-03 13:27:44,300 - INFO - Standard output: 
+2025-04-03 13:27:44,300 - INFO - Test case TC003 execution status: PASS
+2025-04-03 13:27:44,300 - INFO - 
+Processing test case: TC004 - Verify add goal functionality
+2025-04-03 13:27:44,300 - INFO - Generating Selenium script for test case TC004 - Verify add goal functionality
+2025-04-03 13:27:44,376 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 13:27:44,376 - INFO - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-04-03 13:27:51,237 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:27:51,239 - INFO - Executing test script for test case TC004
+2025-04-03 13:27:51,239 - INFO - Running script: test_script_TC004.py
+2025-04-03 13:28:05,293 - INFO - Script execution completed with exit code: 0
+2025-04-03 13:28:05,293 - INFO - Standard output: Setting up the Chrome WebDriver...
+Navigating to https://ourgoalplan.co.in/Login.aspx...
+Waiting for the username field to be clickable...
+Error performing login: Message: 
+Stacktrace:
+#0 0x56e160f261fa <unknown>
+#1 0x56e160a36810 <unknown>
+#2 0x56e160a85506 <unknown>
+#3 0x56e160a857a1 <unknown>
+#4 0x56e160acac24 <unknown>
+#5 0x56e160aa95ad <unknown>
+#6 0x56e160ac8007 <unknown>
+#7 0x56e160aa9323 <unknown>
+#8 0x56e160a77de0 <unknown>
+#9 0x56e160a78dbe <unknown>
+#10 0x56e160ef212b <unknown>
+#11 0x56e160ef60c7 <unknown>
+#12 0x56e160edf6cc <unknown>
+#13 0x56e160ef6c47 <unknown>
+#14 0x56e160ec467f <unknown>
+#15 0x56e160f15288 <unknown>
+#16 0x56e160f15450 <unknown>
+#17 0x56e160f25076 <unknown>
+#18 0x77569b494ac3 <unknown>
+
+Test Case TC004 failed: Unable to perform login
+2025-04-03 13:28:05,293 - INFO - Test case TC004 execution status: FAIL
+2025-04-03 13:28:05,293 - INFO - 
+Processing test case: TC005 - Verify override absence functionality
+2025-04-03 13:28:05,293 - INFO - Generating Selenium script for test case TC005 - Verify override absence functionality
+2025-04-03 13:28:10,082 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 13:28:10,084 - INFO - Executing test script for test case TC005
+2025-04-03 13:28:10,084 - INFO - Running script: test_script_TC005.py
+2025-04-03 13:28:10,099 - INFO - Script execution completed with exit code: 1
+2025-04-03 13:28:10,099 - INFO - Standard output: 
+2025-04-03 13:28:10,099 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC005.py", line 154
+    print(f"Test case TC005 PASSED: Successfully executed Verify override absence functionality")
+IndentationError: expected an indented block after 'finally' statement on line 152
+2025-04-03 13:28:10,099 - INFO - Test case TC005 execution status: FAIL
+2025-04-03 13:28:10,099 - INFO - 
+Test execution summary:
+2025-04-03 13:28:10,099 - INFO - Total test cases: 5
+2025-04-03 13:28:10,099 - INFO - Passed: 2 (40.00%)
+2025-04-03 13:28:10,099 - INFO - Failed: 3
+2025-04-03 13:28:10,099 - INFO - Errors: 0
+2025-04-03 13:28:10,099 - INFO - Timeouts: 0

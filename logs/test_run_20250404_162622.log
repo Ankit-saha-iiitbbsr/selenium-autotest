@@ -1,0 +1,201 @@
+2025-04-04 16:26:22,055 - INFO - Starting new test run at 20250404_162622
+2025-04-04 16:26:22,056 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:26:22,056 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:26:25,021 - INFO - Capturing initial page state...
+2025-04-04 16:26:25,243 - INFO - Screenshot saved to screenshots/before_login_20250404_162625.png
+2025-04-04 16:26:25,243 - INFO - --- Current page state (before_login) ---
+2025-04-04 16:26:25,245 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:26:25,321 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_162625.png
+2025-04-04 16:26:25,333 - INFO - Found 58 elements on page
+2025-04-04 16:26:25,373 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-04 16:26:25,391 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-04 16:26:25,420 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-04 16:26:25,436 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-04 16:26:25,456 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-04 16:26:25,482 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-04 16:26:25,501 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-04 16:26:25,521 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-04 16:26:25,552 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 16:26:25,567 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-04 16:26:25,567 - INFO - --- End of page state ---
+2025-04-04 16:26:25,569 - INFO - Analyzing login page...
+2025-04-04 16:26:27,872 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:26:27,875 - INFO - Login attempt with username: Ankit.s
+2025-04-04 16:26:27,875 - INFO - Using selectors - Username: input[name='txtName'], Password: input[name='txtPassword'], Submit: input[type='submit']
+2025-04-04 16:26:32,818 - INFO - Screenshot saved to screenshots/after_login_20250404_162632.png
+2025-04-04 16:26:32,818 - INFO - --- Current page state (after_login) ---
+2025-04-04 16:26:32,820 - INFO - Current URL: https://ourgoalplan.co.in/GoalSheet.aspx
+2025-04-04 16:26:32,914 - INFO - Screenshot saved to screenshots/page_state_after_login_20250404_162632.png
+2025-04-04 16:26:32,950 - INFO - Found 621 elements on page
+2025-04-04 16:26:33,026 - INFO - Element 1: <html> id='' class='' text='Celebrating a quarter-century of quirky ideas, bol...'
+2025-04-04 16:26:33,053 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 16:26:33,068 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 16:26:33,094 - INFO - Element 4: <link> id='' class='' text=''
+2025-04-04 16:26:33,114 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 16:26:33,136 - INFO - Element 6: <link> id='' class='' text=''
+2025-04-04 16:26:33,164 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-04 16:26:33,181 - INFO - Element 8: <script> id='' class='' text=''
+2025-04-04 16:26:33,203 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 16:26:33,237 - INFO - Element 10: <script> id='' class='' text=''
+2025-04-04 16:26:33,237 - INFO - --- End of page state ---
+2025-04-04 16:26:33,647 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:26:33,648 - INFO - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-04-04 16:26:36,919 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:26:36,921 - INFO - Login successful!
+2025-04-04 16:26:36,921 - INFO - Generating test cases...
+2025-04-04 16:26:36,921 - INFO - Generating test cases for the current page...
+2025-04-04 16:26:37,011 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250404_162636.png
+2025-04-04 16:26:37,012 - INFO - Sending request to LLM for test case generation...
+2025-04-04 16:26:37,128 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:26:37,129 - INFO - Retrying request to /openai/v1/chat/completions in 42.000000 seconds
+2025-04-04 16:27:22,782 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:27:22,784 - INFO - Received response from LLM
+2025-04-04 16:27:22,784 - INFO - Successfully parsed 5 test cases
+2025-04-04 16:27:22,784 - INFO - Generated test case: TC001 - Verify successful login with valid credentials (positive)
+2025-04-04 16:27:22,785 - INFO - Generated test case: TC002 - Verify error handling for invalid username (negative)
+2025-04-04 16:27:22,785 - INFO - Generated test case: TC003 - Verify goal date selection (positive)
+2025-04-04 16:27:22,785 - INFO - Generated test case: TC004 - Verify adding a new goal (positive)
+2025-04-04 16:27:22,785 - INFO - Generated test case: TC005 - Verify overriding absence (positive)
+2025-04-04 16:27:22,786 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-04 16:27:22,786 - INFO - 
+Processing test case: TC001 - Verify successful login with valid credentials
+2025-04-04 16:27:22,786 - INFO - Generating Selenium script for test case TC001 - Verify successful login with valid credentials
+2025-04-04 16:27:22,859 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:27:22,859 - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-04-04 16:27:33,862 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:27:33,864 - INFO - Executing test script for test case TC001
+2025-04-04 16:27:33,864 - INFO - Running script: test_script_TC001.py
+2025-04-04 16:27:55,970 - INFO - Script execution completed with exit code: 0
+2025-04-04 16:27:55,970 - INFO - Standard output: 
+2025-04-04 16:27:55,970 - WARNING - Standard error: 2025-04-04 16:27:45,481 - ERROR - Timeout occurred while waiting for login elements
+2025-04-04 16:27:55,880 - ERROR - Timeout occurred while waiting for dashboard header
+2025-04-04 16:27:55,880 - ERROR - Test case TC001 failed: Dashboard is not visible
+2025-04-04 16:27:55,970 - INFO - Test case TC001 execution status: FAIL
+2025-04-04 16:27:55,970 - INFO - 
+Processing test case: TC002 - Verify error handling for invalid username
+2025-04-04 16:27:55,971 - INFO - Generating Selenium script for test case TC002 - Verify error handling for invalid username
+2025-04-04 16:28:00,365 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:28:00,367 - INFO - Executing test script for test case TC002
+2025-04-04 16:28:00,368 - INFO - Running script: test_script_TC002.py
+2025-04-04 16:28:00,486 - INFO - Script execution completed with exit code: 1
+2025-04-04 16:28:00,486 - INFO - Standard output: Setting up the Selenium WebDriver...
+2025-04-04 16:28:00,486 - WARNING - Standard error: Traceback (most recent call last):
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC002.py", line 127, in <module>
+    main()
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC002.py", line 116, in main
+    driver = setup_webdriver()
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC002.py", line 26, in setup_webdriver
+    driver = webdriver.Chrome(webdriver_path, options=options)
+TypeError: WebDriver.__init__() got multiple values for argument 'options'
+2025-04-04 16:28:00,486 - INFO - Test case TC002 execution status: FAIL
+2025-04-04 16:28:00,487 - INFO - 
+Processing test case: TC003 - Verify goal date selection
+2025-04-04 16:28:00,487 - INFO - Generating Selenium script for test case TC003 - Verify goal date selection
+2025-04-04 16:28:00,622 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:28:00,622 - INFO - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-04-04 16:28:07,865 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:28:07,867 - INFO - Executing test script for test case TC003
+2025-04-04 16:28:07,868 - INFO - Running script: test_script_TC003.py
+2025-04-04 16:28:40,625 - INFO - Script execution completed with exit code: 0
+2025-04-04 16:28:40,625 - INFO - Standard output: Successfully navigated to https://ourgoalplan.co.in/Login.aspx
+Failed to login: Message: 
+Stacktrace:
+#0 0x60757941a1fa <unknown>
+#1 0x607578f2a810 <unknown>
+#2 0x607578f79506 <unknown>
+#3 0x607578f797a1 <unknown>
+#4 0x607578fbec24 <unknown>
+#5 0x607578f9d5ad <unknown>
+#6 0x607578fbc007 <unknown>
+#7 0x607578f9d323 <unknown>
+#8 0x607578f6bde0 <unknown>
+#9 0x607578f6cdbe <unknown>
+#10 0x6075793e612b <unknown>
+#11 0x6075793ea0c7 <unknown>
+#12 0x6075793d36cc <unknown>
+#13 0x6075793eac47 <unknown>
+#14 0x6075793b867f <unknown>
+#15 0x607579409288 <unknown>
+#16 0x607579409450 <unknown>
+#17 0x607579419076 <unknown>
+#18 0x7bec81a94ac3 <unknown>
+
+Failed to select a date: Message: 
+Stacktrace:
+#0 0x60757941a1fa <unknown>
+#1 0x607578f2a810 <unknown>
+#2 0x607578f79506 <unknown>
+#3 0x607578f797a1 <unknown>
+#4 0x607578fbec24 <unknown>
+#5 0x607578f9d5ad <unknown>
+#6 0x607578fbc007 <unknown>
+#7 0x607578f9d323 <unknown>
+#8 0x607578f6bde0 <unknown>
+#9 0x607578f6cdbe <unknown>
+#10 0x6075793e612b <unknown>
+#11 0x6075793ea0c7 <unknown>
+#12 0x6075793d36cc <unknown>
+#13 0x6075793eac47 <unknown>
+#14 0x6075793b867f <unknown>
+#15 0x607579409288 <unknown>
+#16 0x607579409450 <unknown>
+#17 0x607579419076 <unknown>
+#18 0x7bec81a94ac3 <unknown>
+
+Failed to verify the selected date: Message: 
+Stacktrace:
+#0 0x60757941a1fa <unknown>
+#1 0x607578f2a810 <unknown>
+#2 0x607578f79506 <unknown>
+#3 0x607578f797a1 <unknown>
+#4 0x607578fbec24 <unknown>
+#5 0x607578f9d5ad <unknown>
+#6 0x607578fbc007 <unknown>
+#7 0x607578f9d323 <unknown>
+#8 0x607578f6bde0 <unknown>
+#9 0x607578f6cdbe <unknown>
+#10 0x6075793e612b <unknown>
+#11 0x6075793ea0c7 <unknown>
+#12 0x6075793d36cc <unknown>
+#13 0x6075793eac47 <unknown>
+#14 0x6075793b867f <unknown>
+#15 0x607579409288 <unknown>
+#16 0x607579409450 <unknown>
+#17 0x607579419076 <unknown>
+#18 0x7bec81a94ac3 <unknown>
+
+Test case TC003 failed: Verify goal date selection
+2025-04-04 16:28:40,625 - INFO - Test case TC003 execution status: FAIL
+2025-04-04 16:28:40,625 - INFO - 
+Processing test case: TC004 - Verify adding a new goal
+2025-04-04 16:28:40,625 - INFO - Generating Selenium script for test case TC004 - Verify adding a new goal
+2025-04-04 16:28:45,409 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:28:45,411 - INFO - Executing test script for test case TC004
+2025-04-04 16:28:45,412 - INFO - Running script: test_script_TC004.py
+2025-04-04 16:29:18,026 - INFO - Script execution completed with exit code: 0
+2025-04-04 16:29:18,026 - INFO - Standard output: Test Case TC004: FAIL
+2025-04-04 16:29:18,026 - WARNING - Standard error: 2025-04-04 16:28:57,120 - ERROR - Login failed: Timeout waiting for login elements
+2025-04-04 16:29:07,514 - ERROR - Failed to add goal: Timeout waiting for goal elements
+2025-04-04 16:29:17,937 - ERROR - Failed to verify goal: Timeout waiting for goal list
+2025-04-04 16:29:18,026 - INFO - Test case TC004 execution status: FAIL
+2025-04-04 16:29:18,026 - INFO - 
+Processing test case: TC005 - Verify overriding absence
+2025-04-04 16:29:18,026 - INFO - Generating Selenium script for test case TC005 - Verify overriding absence
+2025-04-04 16:29:22,315 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:29:22,317 - INFO - Executing test script for test case TC005
+2025-04-04 16:29:22,317 - INFO - Running script: test_script_TC005.py
+2025-04-04 16:29:33,822 - INFO - Script execution completed with exit code: 0
+2025-04-04 16:29:33,822 - INFO - Standard output: Executing test case TC005 - Verify overriding absence
+Error: Login form not available after 10 seconds
+Test case TC005 failed: Login did not complete successfully
+2025-04-04 16:29:33,822 - INFO - Test case TC005 execution status: FAIL
+2025-04-04 16:29:33,822 - INFO - 
+Test execution summary:
+2025-04-04 16:29:33,822 - INFO - Total test cases: 5
+2025-04-04 16:29:33,822 - INFO - Passed: 0 (0.00%)
+2025-04-04 16:29:33,822 - INFO - Failed: 5
+2025-04-04 16:29:33,822 - INFO - Errors: 0
+2025-04-04 16:29:33,822 - INFO - Timeouts: 0

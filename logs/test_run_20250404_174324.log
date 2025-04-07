@@ -1,0 +1,30 @@
+2025-04-04 17:43:24,633 - INFO - Starting new test run at 20250404_174324
+2025-04-04 17:43:24,634 - INFO - Starting test generation for URL: https://practicetestautomation.com/practice-test-login/
+2025-04-04 17:43:24,634 - INFO - Navigating to URL: https://practicetestautomation.com/practice-test-login/
+2025-04-04 17:43:29,026 - INFO - Capturing initial page state...
+2025-04-04 17:43:29,250 - INFO - Screenshot saved to screenshots/before_login_20250404_174329.png
+2025-04-04 17:43:29,250 - INFO - --- Current page state (before_login) ---
+2025-04-04 17:43:29,252 - INFO - Current URL: https://practicetestautomation.com/practice-test-login/
+2025-04-04 17:43:29,327 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_174329.png
+2025-04-04 17:43:29,343 - INFO - Found 176 elements on page
+2025-04-04 17:43:29,398 - INFO - Element 1: <html> id='' class='' text='HOME PRACTICE COURSES BLOG CONTACT
+Test login
+This...'
+2025-04-04 17:43:29,415 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 17:43:29,440 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 17:43:29,459 - INFO - Element 4: <style> id='' class='' text=''
+2025-04-04 17:43:29,478 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-04 17:43:29,501 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-04 17:43:29,518 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-04 17:43:29,541 - INFO - Element 8: <title> id='' class='' text=''
+2025-04-04 17:43:29,561 - INFO - Element 9: <link> id='' class='' text=''
+2025-04-04 17:43:29,578 - INFO - Element 10: <meta> id='' class='' text=''
+2025-04-04 17:43:29,578 - INFO - --- End of page state ---
+2025-04-04 17:43:29,585 - INFO - Analyzing login page...
+2025-04-04 17:43:33,648 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:43:33,651 - INFO - Login attempt with username: student
+2025-04-04 17:43:33,651 - INFO - Using selectors - Username: input[name='username'], Password: input[name='password'], Submit: button[type='submit']
+2025-04-04 17:43:42,093 - ERROR - Error during element interaction: Message: Could not find element with primary selector 'button[type='submit']' or any alternatives
+
+2025-04-04 17:43:42,173 - INFO - Screenshot saved to screenshots/login_error_20250404_174342.png
+2025-04-04 17:43:42,174 - ERROR - Unable to proceed: Login failed

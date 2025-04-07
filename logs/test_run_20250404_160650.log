@@ -1,0 +1,168 @@
+2025-04-04 16:06:50,085 - INFO - Starting new test run at 20250404_160650
+2025-04-04 16:06:50,085 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:06:50,085 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:06:54,855 - INFO - Capturing initial page state...
+2025-04-04 16:06:55,067 - INFO - Screenshot saved to screenshots/before_login_20250404_160655.png
+2025-04-04 16:06:55,067 - INFO - --- Current page state (before_login) ---
+2025-04-04 16:06:55,069 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:06:55,140 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_160655.png
+2025-04-04 16:06:55,153 - INFO - Found 58 elements on page
+2025-04-04 16:06:55,198 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-04 16:06:55,215 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-04 16:06:55,245 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-04 16:06:55,261 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-04 16:06:55,287 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-04 16:06:55,305 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-04 16:06:55,333 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-04 16:06:55,356 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-04 16:06:55,371 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 16:06:55,393 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-04 16:06:55,393 - INFO - --- End of page state ---
+2025-04-04 16:06:55,401 - INFO - Analyzing login page...
+2025-04-04 16:06:57,584 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:06:57,602 - INFO - Login attempt with username: Ankit.s
+2025-04-04 16:06:57,602 - INFO - Using selectors - Username: input[name='txtName'], Password: input[name='txtPassword'], Submit: input[type='submit']
+2025-04-04 16:07:03,704 - INFO - Screenshot saved to screenshots/after_login_20250404_160703.png
+2025-04-04 16:07:03,704 - INFO - --- Current page state (after_login) ---
+2025-04-04 16:07:03,707 - INFO - Current URL: https://ourgoalplan.co.in/GoalSheet.aspx
+2025-04-04 16:07:03,807 - INFO - Screenshot saved to screenshots/page_state_after_login_20250404_160703.png
+2025-04-04 16:07:03,841 - INFO - Found 624 elements on page
+2025-04-04 16:07:03,916 - INFO - Element 1: <html> id='' class='' text='Celebrating a quarter-century of quirky ideas, bol...'
+2025-04-04 16:07:03,936 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 16:07:03,955 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 16:07:03,984 - INFO - Element 4: <link> id='' class='' text=''
+2025-04-04 16:07:04,002 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 16:07:04,029 - INFO - Element 6: <link> id='' class='' text=''
+2025-04-04 16:07:04,048 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-04 16:07:04,068 - INFO - Element 8: <script> id='' class='' text=''
+2025-04-04 16:07:04,091 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 16:07:04,118 - INFO - Element 10: <script> id='' class='' text=''
+2025-04-04 16:07:04,118 - INFO - --- End of page state ---
+2025-04-04 16:07:05,989 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:07:05,991 - INFO - Login successful!
+2025-04-04 16:07:05,991 - INFO - Generating test cases...
+2025-04-04 16:07:05,991 - INFO - Generating test cases for the current page...
+2025-04-04 16:07:06,079 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250404_160705.png
+2025-04-04 16:07:06,079 - INFO - Sending request to LLM for test case generation...
+2025-04-04 16:07:06,286 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:07:06,286 - INFO - Retrying request to /openai/v1/chat/completions in 42.000000 seconds
+2025-04-04 16:07:52,044 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:07:52,045 - INFO - Received response from LLM
+2025-04-04 16:07:52,045 - INFO - Successfully parsed 5 test cases
+2025-04-04 16:07:52,045 - INFO - Generated test case: TC001 - Verify date navigation functionality (positive)
+2025-04-04 16:07:52,045 - INFO - Generated test case: TC002 - Verify goal addition functionality (positive)
+2025-04-04 16:07:52,045 - INFO - Generated test case: TC003 - Verify override absence functionality (positive)
+2025-04-04 16:07:52,045 - INFO - Generated test case: TC004 - Verify invalid goal text error handling (negative)
+2025-04-04 16:07:52,045 - INFO - Generated test case: TC005 - Verify user search functionality (positive)
+2025-04-04 16:07:52,046 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-04 16:07:52,046 - INFO - 
+Processing test case: TC001 - Verify date navigation functionality
+2025-04-04 16:07:52,046 - INFO - Generating Selenium script for test case TC001 - Verify date navigation functionality
+2025-04-04 16:07:52,128 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:07:52,128 - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-04-04 16:08:02,680 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:08:02,681 - INFO - Validating Selenium script for test case TC001
+2025-04-04 16:08:02,681 - INFO - Basic syntax check passed
+2025-04-04 16:08:02,769 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:08:02,770 - INFO - Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2025-04-04 16:08:36,000 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:08:36,002 - ERROR - Failed to parse JSON from validation response
+2025-04-04 16:08:36,002 - WARNING - Script validation failed for test case TC001, but no improved script was provided. Proceeding with caution.
+2025-04-04 16:08:36,002 - INFO - Script generated and saved to selenium_script_TC001.py
+2025-04-04 16:08:36,003 - INFO - Executing test script for test case TC001
+2025-04-04 16:08:36,003 - INFO - Running script: test_script_TC001.py
+2025-04-04 16:08:36,129 - INFO - Script execution completed with exit code: 1
+2025-04-04 16:08:36,129 - INFO - Standard output: 
+2025-04-04 16:08:36,129 - WARNING - Standard error: Traceback (most recent call last):
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 10, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+2025-04-04 16:08:36,129 - INFO - Test case TC001 execution status: FAIL
+2025-04-04 16:08:36,129 - INFO - 
+Processing test case: TC002 - Verify goal addition functionality
+2025-04-04 16:08:36,129 - INFO - Generating Selenium script for test case TC002 - Verify goal addition functionality
+2025-04-04 16:08:36,203 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:08:36,204 - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-04-04 16:08:51,361 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:08:51,363 - INFO - Validating Selenium script for test case TC002
+2025-04-04 16:08:51,365 - ERROR - Syntax error in script: expected an indented block after 'finally' statement on line 125 (test_script_TC002.py, line 127)
+2025-04-04 16:08:51,365 - INFO - Using improved script for test case TC002
+2025-04-04 16:08:51,365 - INFO - Script generated and saved to selenium_script_TC002.py
+2025-04-04 16:08:51,365 - INFO - Executing test script for test case TC002
+2025-04-04 16:08:51,366 - INFO - Running script: test_script_TC002.py
+2025-04-04 16:08:51,384 - INFO - Script execution completed with exit code: 1
+2025-04-04 16:08:51,384 - INFO - Standard output: 
+2025-04-04 16:08:51,384 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC002.py", line 1
+    Syntax error: expected an indented block after 'finally' statement on line 125 (test_script_TC002.py, line 127)
+           ^^^^^
+SyntaxError: invalid syntax
+2025-04-04 16:08:51,384 - INFO - Test case TC002 execution status: FAIL
+2025-04-04 16:08:51,384 - INFO - 
+Processing test case: TC003 - Verify override absence functionality
+2025-04-04 16:08:51,384 - INFO - Generating Selenium script for test case TC003 - Verify override absence functionality
+2025-04-04 16:08:51,463 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:08:51,464 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2025-04-04 16:09:09,019 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:09:09,025 - INFO - Validating Selenium script for test case TC003
+2025-04-04 16:09:09,027 - INFO - Basic syntax check passed
+2025-04-04 16:09:09,116 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:09:09,117 - INFO - Retrying request to /openai/v1/chat/completions in 24.000000 seconds
+2025-04-04 16:09:37,661 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:09:37,663 - ERROR - Failed to parse JSON from validation response
+2025-04-04 16:09:37,664 - WARNING - Script validation failed for test case TC003, but no improved script was provided. Proceeding with caution.
+2025-04-04 16:09:37,664 - INFO - Script generated and saved to selenium_script_TC003.py
+2025-04-04 16:09:37,664 - INFO - Executing test script for test case TC003
+2025-04-04 16:09:37,664 - INFO - Running script: test_script_TC003.py
+2025-04-04 16:09:59,850 - INFO - Script execution completed with exit code: 0
+2025-04-04 16:09:59,850 - INFO - Standard output: Test case TC003 PASSED: Successfully executed Verify override absence functionality
+2025-04-04 16:09:59,850 - WARNING - Standard error: 2025-04-04 16:09:39,023 - INFO - Successfully navigated to https://ourgoalplan.co.in/Login.aspx
+2025-04-04 16:09:49,384 - ERROR - Login fields not found within the specified time limit
+2025-04-04 16:09:59,761 - ERROR - Override absence button not found within the specified time limit
+2025-04-04 16:09:59,761 - INFO - TC003 - Verify override absence functionality: FAIL
+2025-04-04 16:09:59,851 - INFO - Test case TC003 execution status: PASS
+2025-04-04 16:09:59,851 - INFO - 
+Processing test case: TC004 - Verify invalid goal text error handling
+2025-04-04 16:09:59,851 - INFO - Generating Selenium script for test case TC004 - Verify invalid goal text error handling
+2025-04-04 16:10:04,861 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:10:04,863 - INFO - Validating Selenium script for test case TC004
+2025-04-04 16:10:04,865 - ERROR - Syntax error in script: expected an indented block after 'finally' statement on line 162 (test_script_TC004.py, line 164)
+2025-04-04 16:10:04,865 - INFO - Using improved script for test case TC004
+2025-04-04 16:10:04,866 - INFO - Script generated and saved to selenium_script_TC004.py
+2025-04-04 16:10:04,866 - INFO - Executing test script for test case TC004
+2025-04-04 16:10:04,866 - INFO - Running script: test_script_TC004.py
+2025-04-04 16:10:04,883 - INFO - Script execution completed with exit code: 1
+2025-04-04 16:10:04,883 - INFO - Standard output: 
+2025-04-04 16:10:04,883 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC004.py", line 1
+    Syntax error: expected an indented block after 'finally' statement on line 162 (test_script_TC004.py, line 164)
+           ^^^^^
+SyntaxError: invalid syntax
+2025-04-04 16:10:04,883 - INFO - Test case TC004 execution status: FAIL
+2025-04-04 16:10:04,883 - INFO - 
+Processing test case: TC005 - Verify user search functionality
+2025-04-04 16:10:04,883 - INFO - Generating Selenium script for test case TC005 - Verify user search functionality
+2025-04-04 16:10:04,958 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 16:10:04,959 - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-04-04 16:10:10,285 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:10:10,288 - INFO - Validating Selenium script for test case TC005
+2025-04-04 16:10:10,288 - ERROR - Syntax error in script: expected an indented block after 'if' statement on line 130 (test_script_TC005.py, line 131)
+2025-04-04 16:10:10,288 - INFO - Using improved script for test case TC005
+2025-04-04 16:10:10,288 - INFO - Script generated and saved to selenium_script_TC005.py
+2025-04-04 16:10:10,288 - INFO - Executing test script for test case TC005
+2025-04-04 16:10:10,289 - INFO - Running script: test_script_TC005.py
+2025-04-04 16:10:10,304 - INFO - Script execution completed with exit code: 1
+2025-04-04 16:10:10,304 - INFO - Standard output: 
+2025-04-04 16:10:10,304 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC005.py", line 1
+    Syntax error: expected an indented block after 'if' statement on line 130 (test_script_TC005.py, line 131)
+           ^^^^^
+SyntaxError: invalid syntax
+2025-04-04 16:10:10,304 - INFO - Test case TC005 execution status: FAIL
+2025-04-04 16:10:10,305 - INFO - 
+Test execution summary:
+2025-04-04 16:10:10,305 - INFO - Total test cases: 5
+2025-04-04 16:10:10,305 - INFO - Passed: 1 (20.00%)
+2025-04-04 16:10:10,305 - INFO - Failed: 4
+2025-04-04 16:10:10,305 - INFO - Errors: 0
+2025-04-04 16:10:10,305 - INFO - Timeouts: 0

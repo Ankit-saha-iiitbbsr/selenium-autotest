@@ -1,0 +1,131 @@
+2025-04-03 16:23:07,543 - INFO - Starting new test run at 20250403_162307
+2025-04-03 16:23:07,543 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:23:07,543 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:23:10,872 - INFO - Capturing initial page state...
+2025-04-03 16:23:11,077 - INFO - Screenshot saved to screenshots/before_login_20250403_162311.png
+2025-04-03 16:23:11,077 - INFO - --- Current page state (before_login) ---
+2025-04-03 16:23:11,080 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:23:11,161 - INFO - Screenshot saved to screenshots/page_state_before_login_20250403_162311.png
+2025-04-03 16:23:11,176 - INFO - Found 58 elements on page
+2025-04-03 16:23:11,215 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-03 16:23:11,235 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-03 16:23:11,251 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-03 16:23:11,272 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 16:23:11,297 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 16:23:11,319 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-03 16:23:11,335 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-03 16:23:11,354 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-03 16:23:11,377 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-03 16:23:11,401 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 16:23:11,402 - INFO - --- End of page state ---
+2025-04-03 16:23:11,403 - INFO - Analyzing login page...
+2025-04-03 16:23:13,191 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:23:13,197 - INFO - Login attempt with username: Ankit.s
+2025-04-03 16:23:13,197 - INFO - Using selectors - Username: input[name='txtName'], Password: input[name='txtPassword'], Submit: input[type='submit']
+2025-04-03 16:23:18,796 - INFO - Screenshot saved to screenshots/after_login_20250403_162318.png
+2025-04-03 16:23:18,796 - INFO - --- Current page state (after_login) ---
+2025-04-03 16:23:18,799 - INFO - Current URL: https://ourgoalplan.co.in/GoalSheet.aspx
+2025-04-03 16:23:18,888 - INFO - Screenshot saved to screenshots/page_state_after_login_20250403_162318.png
+2025-04-03 16:23:18,925 - INFO - Found 620 elements on page
+2025-04-03 16:23:19,000 - INFO - Element 1: <html> id='' class='' text='Celebrating a quarter-century of quirky ideas, bol...'
+2025-04-03 16:23:19,016 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 16:23:19,045 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 16:23:19,068 - INFO - Element 4: <link> id='' class='' text=''
+2025-04-03 16:23:19,089 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-03 16:23:19,115 - INFO - Element 6: <link> id='' class='' text=''
+2025-04-03 16:23:19,138 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 16:23:19,153 - INFO - Element 8: <script> id='' class='' text=''
+2025-04-03 16:23:19,185 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-03 16:23:19,200 - INFO - Element 10: <script> id='' class='' text=''
+2025-04-03 16:23:19,200 - INFO - --- End of page state ---
+2025-04-03 16:23:19,575 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:23:19,576 - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-04-03 16:23:22,201 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:23:22,203 - INFO - Login successful!
+2025-04-03 16:23:22,203 - INFO - Generating test cases...
+2025-04-03 16:23:22,203 - INFO - Generating test cases for the current page...
+2025-04-03 16:23:22,293 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250403_162322.png
+2025-04-03 16:23:22,293 - INFO - Sending request to LLM for test case generation...
+2025-04-03 16:23:22,419 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:23:22,420 - INFO - Retrying request to /openai/v1/chat/completions in 43.000000 seconds
+2025-04-03 16:24:09,486 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:24:09,507 - INFO - Received response from LLM
+2025-04-03 16:24:09,507 - INFO - Successfully parsed 5 test cases
+2025-04-03 16:24:09,508 - INFO - Generated test case: TC001 - Verify successful date change with valid date (positive)
+2025-04-03 16:24:09,508 - INFO - Generated test case: TC002 - Verify error handling for invalid date (negative)
+2025-04-03 16:24:09,508 - INFO - Generated test case: TC003 - Verify successful goal addition with valid data (positive)
+2025-04-03 16:24:09,508 - INFO - Generated test case: TC004 - Verify error handling for empty goal text (negative)
+2025-04-03 16:24:09,508 - INFO - Generated test case: TC005 - Verify successful user search with valid username (positive)
+2025-04-03 16:24:09,509 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-03 16:24:09,509 - INFO - 
+Processing test case: TC001 - Verify successful date change with valid date
+2025-04-03 16:24:09,509 - INFO - Generating Selenium script for test case TC001 - Verify successful date change with valid date
+2025-04-03 16:24:09,614 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:24:09,614 - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-04-03 16:24:20,292 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:24:20,296 - INFO - Validating Selenium script for test case TC001
+2025-04-03 16:24:20,296 - ERROR - Syntax error in script: unexpected indent (test_script_TC001.py, line 52)
+2025-04-03 16:24:20,296 - INFO - Using improved script for test case TC001
+2025-04-03 16:24:20,296 - INFO - Script generated and saved to selenium_script_TC001.py
+2025-04-03 16:24:20,296 - INFO - Executing test script for test case TC001
+2025-04-03 16:24:20,297 - INFO - Running script: test_script_TC001.py
+2025-04-03 16:24:20,312 - INFO - Script execution completed with exit code: 1
+2025-04-03 16:24:20,312 - INFO - Standard output: 
+2025-04-03 16:24:20,312 - WARNING - Standard error: File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 1
+    Syntax error: unexpected indent (test_script_TC001.py, line 52)
+           ^^^^^
+SyntaxError: invalid syntax
+2025-04-03 16:24:20,312 - INFO - Test case TC001 execution status: FAIL
+2025-04-03 16:24:20,312 - INFO - 
+Processing test case: TC002 - Verify error handling for invalid date
+2025-04-03 16:24:20,313 - INFO - Generating Selenium script for test case TC002 - Verify error handling for invalid date
+2025-04-03 16:24:20,388 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:24:20,389 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2025-04-03 16:24:37,149 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:24:37,151 - INFO - Validating Selenium script for test case TC002
+2025-04-03 16:24:37,153 - INFO - Basic syntax check passed
+2025-04-03 16:24:37,234 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:24:37,235 - INFO - Retrying request to /openai/v1/chat/completions in 22.000000 seconds
+2025-04-03 16:25:05,548 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:25:05,582 - ERROR - Failed to parse JSON from validation response
+2025-04-03 16:25:05,584 - WARNING - Script validation failed for test case TC002, but no improved script was provided. Proceeding with caution.
+2025-04-03 16:25:05,585 - INFO - Script generated and saved to selenium_script_TC002.py
+2025-04-03 16:25:05,586 - INFO - Executing test script for test case TC002
+2025-04-03 16:25:05,586 - INFO - Running script: test_script_TC002.py
+2025-04-03 16:25:17,623 - INFO - Script execution completed with exit code: 0
+2025-04-03 16:25:17,623 - INFO - Standard output: Failed to find the login fields or button within 10 seconds. Test case TC002 failed.
+2025-04-03 16:25:17,623 - INFO - Test case TC002 execution status: FAIL
+2025-04-03 16:25:17,623 - INFO - 
+Processing test case: TC003 - Verify successful goal addition with valid data
+2025-04-03 16:25:17,623 - INFO - Generating Selenium script for test case TC003 - Verify successful goal addition with valid data
+2025-04-03 16:25:18,764 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:25:18,765 - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-04-03 16:25:23,490 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 16:25:23,492 - INFO - Validating Selenium script for test case TC003
+2025-04-03 16:25:23,493 - INFO - Basic syntax check passed
+2025-04-03 16:25:23,574 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:25:23,575 - ERROR - Error validating script: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jj3wbhkkfj9rqgwym8y0jht8` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100458, Requested 1263. Please try again in 24m47.726s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-04-03 16:25:23,575 - WARNING - Script validation failed for test case TC003, but no improved script was provided. Proceeding with caution.
+2025-04-03 16:25:23,575 - INFO - Script generated and saved to selenium_script_TC003.py
+2025-04-03 16:25:23,576 - INFO - Executing test script for test case TC003
+2025-04-03 16:25:23,576 - INFO - Running script: test_script_TC003.py
+2025-04-03 16:25:46,245 - INFO - Script execution completed with exit code: 0
+2025-04-03 16:25:46,245 - INFO - Standard output: Login failed: Timed out waiting for login elements
+Goal addition failed: Timed out waiting for elements
+Test Case TC003 Failed
+2025-04-03 16:25:46,245 - INFO - Test case TC003 execution status: FAIL
+2025-04-03 16:25:46,245 - INFO - 
+Processing test case: TC004 - Verify error handling for empty goal text
+2025-04-03 16:25:46,245 - INFO - Generating Selenium script for test case TC004 - Verify error handling for empty goal text
+2025-04-03 16:25:46,603 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:25:46,604 - ERROR - Error generating Selenium script: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jj3wbhkkfj9rqgwym8y0jht8` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100432, Requested 653. Please try again in 15m37.688999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-04-03 16:25:46,604 - ERROR - Failed to generate script for test case TC004
+2025-04-03 16:25:46,604 - INFO - 
+Processing test case: TC005 - Verify successful user search with valid username
+2025-04-03 16:25:46,605 - INFO - Generating Selenium script for test case TC005 - Verify successful user search with valid username
+2025-04-03 16:25:46,728 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:25:46,729 - ERROR - Error generating Selenium script: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jj3wbhkkfj9rqgwym8y0jht8` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100432, Requested 660. Please try again in 15m43.617s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-04-03 16:25:46,729 - ERROR - Failed to generate script for test case TC005

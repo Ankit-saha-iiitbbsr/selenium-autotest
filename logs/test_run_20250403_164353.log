@@ -1,0 +1,27 @@
+2025-04-03 16:43:53,269 - INFO - Starting new test run at 20250403_164353
+2025-04-03 16:43:53,269 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:43:53,269 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:43:56,777 - INFO - Capturing initial page state...
+2025-04-03 16:43:56,976 - INFO - Screenshot saved to screenshots/before_login_20250403_164356.png
+2025-04-03 16:43:56,976 - INFO - --- Current page state (before_login) ---
+2025-04-03 16:43:56,979 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-03 16:43:57,047 - INFO - Screenshot saved to screenshots/page_state_before_login_20250403_164356.png
+2025-04-03 16:43:57,057 - INFO - Found 58 elements on page
+2025-04-03 16:43:57,095 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-03 16:43:57,114 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-03 16:43:57,133 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-03 16:43:57,152 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 16:43:57,169 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 16:43:57,186 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-03 16:43:57,207 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-03 16:43:57,232 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-03 16:43:57,253 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-03 16:43:57,270 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 16:43:57,270 - INFO - --- End of page state ---
+2025-04-03 16:43:57,272 - INFO - Analyzing login page...
+2025-04-03 16:43:57,606 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 16:43:57,607 - ERROR - Failed to analyze login page
+2025-04-03 16:43:57,607 - ERROR - Unable to proceed: Login failed

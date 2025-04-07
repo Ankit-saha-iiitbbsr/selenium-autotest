@@ -1,0 +1,6 @@
+02-10-2025 19:54:49: INFO: Application Started
+02-10-2025 19:54:49: INFO: Main URL Entered: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+02-10-2025 19:54:49: INFO: Chrome WebDriver Instance Started
+02-10-2025 19:54:54: INFO: Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+02-10-2025 19:54:54: INFO: Get the page content of: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+02-10-2025 19:55:44: INFO: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

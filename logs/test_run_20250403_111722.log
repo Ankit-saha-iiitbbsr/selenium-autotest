@@ -1,0 +1,102 @@
+2025-04-03 11:17:22,221 - INFO - Starting new test run at 20250403_111722
+2025-04-03 11:17:22,221 - INFO - Starting test generation for URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-03 11:17:22,221 - INFO - Navigating to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-03 11:17:29,160 - INFO - Capturing initial page state...
+2025-04-03 11:17:29,391 - INFO - Screenshot saved to screenshots/before_login_20250403_111729.png
+2025-04-03 11:17:29,391 - INFO - --- Current page state (before_login) ---
+2025-04-03 11:17:29,394 - INFO - Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-03 11:17:29,486 - INFO - Screenshot saved to screenshots/page_state_before_login_20250403_111729.png
+2025-04-03 11:17:29,497 - INFO - Found 80 elements on page
+2025-04-03 11:17:29,552 - INFO - Element 1: <html> id='' class='' text='Login
+Username : Admin
+Password : admin123
+Usernam...'
+2025-04-03 11:17:29,574 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 11:17:29,598 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 11:17:29,623 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 11:17:29,644 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 11:17:29,667 - INFO - Element 6: <title> id='' class='' text=''
+2025-04-03 11:17:29,700 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 11:17:29,718 - INFO - Element 8: <link> id='' class='' text=''
+2025-04-03 11:17:29,749 - INFO - Element 9: <link> id='' class='' text=''
+2025-04-03 11:17:29,767 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 11:17:29,767 - INFO - --- End of page state ---
+2025-04-03 11:17:29,770 - INFO - Analyzing login page...
+2025-04-03 11:17:31,876 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:17:31,878 - INFO - Login attempt with username: Admin
+2025-04-03 11:17:31,878 - INFO - Using selectors - Username: input[name='username'], Password: input[name='password'], Submit: button[type='submit']
+2025-04-03 11:17:35,155 - INFO - Screenshot saved to screenshots/after_login_20250403_111735.png
+2025-04-03 11:17:35,155 - INFO - --- Current page state (after_login) ---
+2025-04-03 11:17:35,158 - INFO - Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-04-03 11:17:35,302 - INFO - Screenshot saved to screenshots/page_state_after_login_20250403_111735.png
+2025-04-03 11:17:35,337 - INFO - Found 411 elements on page
+2025-04-03 11:17:35,442 - INFO - Element 1: <html> id='' class='' text='Admin
+PIM
+Leave
+Time
+Recruitment
+My Info
+Performan...'
+2025-04-03 11:17:35,472 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 11:17:35,489 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 11:17:35,517 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 11:17:35,536 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 11:17:35,562 - INFO - Element 6: <title> id='' class='' text=''
+2025-04-03 11:17:35,582 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 11:17:35,609 - INFO - Element 8: <link> id='' class='' text=''
+2025-04-03 11:17:35,629 - INFO - Element 9: <link> id='' class='' text=''
+2025-04-03 11:17:35,647 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 11:17:35,647 - INFO - --- End of page state ---
+2025-04-03 11:17:38,023 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:17:38,024 - INFO - Login successful!
+2025-04-03 11:17:38,024 - INFO - Generating test cases...
+2025-04-03 11:17:38,024 - INFO - Generating test cases for the current page...
+2025-04-03 11:17:38,119 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250403_111738.png
+2025-04-03 11:17:38,119 - INFO - Sending request to LLM for test case generation...
+2025-04-03 11:17:38,231 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-03 11:17:38,232 - INFO - Retrying request to /openai/v1/chat/completions in 34.000000 seconds
+2025-04-03 11:18:16,932 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:16,933 - INFO - Received response from LLM
+2025-04-03 11:18:16,933 - INFO - Successfully parsed 5 test cases
+2025-04-03 11:18:16,933 - INFO - Generated test case: TC001 - Verify successful login with valid credentials (positive)
+2025-04-03 11:18:16,933 - INFO - Generated test case: TC002 - Verify error handling for invalid login credentials (negative)
+2025-04-03 11:18:16,933 - INFO - Generated test case: TC003 - Verify sidepanel menu functionality (positive)
+2025-04-03 11:18:16,933 - INFO - Generated test case: TC004 - Verify search functionality in sidepanel menu (positive)
+2025-04-03 11:18:16,933 - INFO - Generated test case: TC005 - Verify error handling for empty search query (negative)
+2025-04-03 11:18:16,934 - INFO - Generated 5 test cases
+2025-04-03 11:18:16,934 - INFO - 
+Processing test case: TC001 - Verify successful login with valid credentials
+2025-04-03 11:18:21,233 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:21,234 - INFO - Enhancing Selenium script for test case TC001
+2025-04-03 11:18:21,234 - INFO - Enhanced script generated and saved to selenium_script_TC001.py
+2025-04-03 11:18:21,247 - INFO - Test case TC001 execution status: FAIL
+2025-04-03 11:18:21,247 - INFO - 
+Processing test case: TC002 - Verify error handling for invalid login credentials
+2025-04-03 11:18:24,672 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:24,674 - INFO - Enhancing Selenium script for test case TC002
+2025-04-03 11:18:24,674 - INFO - Enhanced script generated and saved to selenium_script_TC002.py
+2025-04-03 11:18:40,140 - INFO - Test case TC002 execution status: FAIL
+2025-04-03 11:18:40,140 - INFO - 
+Processing test case: TC003 - Verify sidepanel menu functionality
+2025-04-03 11:18:43,378 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:43,379 - INFO - Enhancing Selenium script for test case TC003
+2025-04-03 11:18:43,379 - INFO - Enhanced script generated and saved to selenium_script_TC003.py
+2025-04-03 11:18:43,392 - INFO - Test case TC003 execution status: FAIL
+2025-04-03 11:18:43,392 - INFO - 
+Processing test case: TC004 - Verify search functionality in sidepanel menu
+2025-04-03 11:18:46,827 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:46,828 - INFO - Enhancing Selenium script for test case TC004
+2025-04-03 11:18:46,828 - INFO - Enhanced script generated and saved to selenium_script_TC004.py
+2025-04-03 11:18:46,840 - INFO - Test case TC004 execution status: FAIL
+2025-04-03 11:18:46,840 - INFO - 
+Processing test case: TC005 - Verify error handling for empty search query
+2025-04-03 11:18:50,418 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:18:50,420 - INFO - Enhancing Selenium script for test case TC005
+2025-04-03 11:18:50,420 - INFO - Enhanced script generated and saved to selenium_script_TC005.py
+2025-04-03 11:18:50,432 - INFO - Test case TC005 execution status: FAIL
+2025-04-03 11:18:50,432 - INFO - 
+Test execution summary:
+2025-04-03 11:18:50,432 - INFO - Total test cases: 5
+2025-04-03 11:18:50,432 - INFO - Passed: 0
+2025-04-03 11:18:50,432 - INFO - Failed: 5
+2025-04-03 11:18:50,432 - INFO - Errors: 0

@@ -1,0 +1,291 @@
+2025-04-05 11:03:21,487 - INFO - Starting new test run at 20250405_110321
+2025-04-05 11:03:21,487 - INFO - Starting test generation for URL: https://practicetestautomation.com/practice-test-login/
+2025-04-05 11:03:21,487 - INFO - Navigating to URL: https://practicetestautomation.com/practice-test-login/
+2025-04-05 11:03:24,822 - INFO - Login successful!
+2025-04-05 11:03:24,953 - INFO - Generating test cases...
+2025-04-05 11:03:24,953 - INFO - Generating test cases for the current page...
+2025-04-05 11:03:25,041 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250405_110324.png
+2025-04-05 11:03:25,041 - INFO - Sending request to LLM for test case generation...
+2025-04-05 11:03:31,359 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:03:31,364 - INFO - Received response from LLM
+2025-04-05 11:03:31,364 - INFO - Successfully parsed 8 test cases
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC001 - Verify successful login with valid credentials (functional_positive)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC002 - Verify unsuccessful login with invalid credentials (functional_negative)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC003 - Verify layout and appearance of the page (ui_layout)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC004 - Verify responsiveness of the page (ui_responsiveness)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC005 - Verify navigation menu functionality (ui_navigation)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC006 - Verify input validation for username field (security_input_validation)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC007 - Verify load time of the webpage (performance_load_time)
+2025-04-05 11:03:31,364 - INFO - Generated test case: TC008 - Verify form validation for login form (data_validation_form)
+2025-04-05 11:03:31,364 - INFO - Generated 8 test cases, saved to results/test_cases.json
+2025-04-05 11:03:31,364 - INFO - 
+Processing test case: TC001 - Verify successful login with valid credentials
+2025-04-05 11:03:31,364 - INFO - Generating Selenium script for test case TC001 - Verify successful login with valid credentials
+2025-04-05 11:03:35,571 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:03:35,573 - INFO - Executing test script for test case TC001
+2025-04-05 11:03:35,574 - INFO - Running script: test_script_TC001.py
+2025-04-05 11:03:49,337 - INFO - Script execution completed with exit code: 1
+2025-04-05 11:03:49,338 - INFO - Standard output: 
+2025-04-05 11:03:49,338 - WARNING - Standard error: 2025-04-05 11:03:35,690 - INFO - Initializing Chrome WebDriver...
+2025-04-05 11:03:36,101 - INFO - Chrome WebDriver initialized successfully.
+2025-04-05 11:03:36,101 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/...
+2025-04-05 11:03:38,750 - INFO - Waiting for username field...
+2025-04-05 11:03:38,796 - INFO - Username entered.
+2025-04-05 11:03:38,796 - INFO - Waiting for password field...
+2025-04-05 11:03:38,826 - INFO - Password entered.
+2025-04-05 11:03:38,826 - INFO - Waiting for login button...
+2025-04-05 11:03:49,246 - ERROR - Failed to perform login: Message: 
+Stacktrace:
+#0 0x6466f8b771fa <unknown>
+#1 0x6466f8687810 <unknown>
+#2 0x6466f86d6506 <unknown>
+#3 0x6466f86d67a1 <unknown>
+#4 0x6466f871bc24 <unknown>
+#5 0x6466f86fa5ad <unknown>
+#6 0x6466f8719007 <unknown>
+#7 0x6466f86fa323 <unknown>
+#8 0x6466f86c8de0 <unknown>
+#9 0x6466f86c9dbe <unknown>
+#10 0x6466f8b4312b <unknown>
+#11 0x6466f8b470c7 <unknown>
+#12 0x6466f8b306cc <unknown>
+#13 0x6466f8b47c47 <unknown>
+#14 0x6466f8b1567f <unknown>
+#15 0x6466f8b66288 <unknown>
+#16 0x6466f8b66450 <unknown>
+#17 0x6466f8b76076 <unknown>
+#18 0x7af466e94ac3 <unknown>
+2025-04-05 11:03:49,338 - INFO - Test case TC001 execution status: FAIL
+2025-04-05 11:03:49,338 - INFO - 
+Processing test case: TC002 - Verify unsuccessful login with invalid credentials
+2025-04-05 11:03:49,338 - INFO - Generating Selenium script for test case TC002 - Verify unsuccessful login with invalid credentials
+2025-04-05 11:03:53,966 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:03:53,968 - INFO - Executing test script for test case TC002
+2025-04-05 11:03:53,968 - INFO - Running script: test_script_TC002.py
+2025-04-05 11:04:17,973 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:04:17,973 - INFO - Standard output: Navigated to https://practicetestautomation.com/practice-test-login/
+Error logging in: Message: 
+Stacktrace:
+#0 0x59d7a2d521fa <unknown>
+#1 0x59d7a2862810 <unknown>
+#2 0x59d7a28b1506 <unknown>
+#3 0x59d7a28b17a1 <unknown>
+#4 0x59d7a28f6c24 <unknown>
+#5 0x59d7a28d55ad <unknown>
+#6 0x59d7a28f4007 <unknown>
+#7 0x59d7a28d5323 <unknown>
+#8 0x59d7a28a3de0 <unknown>
+#9 0x59d7a28a4dbe <unknown>
+#10 0x59d7a2d1e12b <unknown>
+#11 0x59d7a2d220c7 <unknown>
+#12 0x59d7a2d0b6cc <unknown>
+#13 0x59d7a2d22c47 <unknown>
+#14 0x59d7a2cf067f <unknown>
+#15 0x59d7a2d41288 <unknown>
+#16 0x59d7a2d41450 <unknown>
+#17 0x59d7a2d51076 <unknown>
+#18 0x72d069294ac3 <unknown>
+
+Test case TC002 failed: Message: 
+Stacktrace:
+#0 0x59d7a2d521fa <unknown>
+#1 0x59d7a2862810 <unknown>
+#2 0x59d7a28b1506 <unknown>
+#3 0x59d7a28b17a1 <unknown>
+#4 0x59d7a28f6c24 <unknown>
+#5 0x59d7a28d55ad <unknown>
+#6 0x59d7a28f4007 <unknown>
+#7 0x59d7a28d5323 <unknown>
+#8 0x59d7a28a3de0 <unknown>
+#9 0x59d7a28a4dbe <unknown>
+#10 0x59d7a2d1e12b <unknown>
+#11 0x59d7a2d220c7 <unknown>
+#12 0x59d7a2d0b6cc <unknown>
+#13 0x59d7a2d22c47 <unknown>
+#14 0x59d7a2cf067f <unknown>
+#15 0x59d7a2d41288 <unknown>
+#16 0x59d7a2d41450 <unknown>
+#17 0x59d7a2d51076 <unknown>
+#18 0x72d069294ac3 <unknown>
+
+Test case TC002 failed
+2025-04-05 11:04:17,973 - INFO - Test case TC002 execution status: FAIL
+2025-04-05 11:04:17,973 - INFO - 
+Processing test case: TC003 - Verify layout and appearance of the page
+2025-04-05 11:04:17,973 - INFO - Generating Selenium script for test case TC003 - Verify layout and appearance of the page
+2025-04-05 11:04:23,133 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:04:23,134 - INFO - Executing test script for test case TC003
+2025-04-05 11:04:23,134 - INFO - Running script: test_script_TC003.py
+2025-04-05 11:04:36,681 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:04:36,681 - INFO - Standard output: 
+2025-04-05 11:04:36,681 - WARNING - Standard error: 2025-04-05 11:04:23,230 - INFO - Setting up Chrome WebDriver...
+2025-04-05 11:04:23,412 - INFO - Chrome WebDriver set up successfully.
+2025-04-05 11:04:23,412 - INFO - Navigating to https://practicetestautomation.com/practice-test-login/...
+2025-04-05 11:04:26,123 - INFO - Successfully navigated to https://practicetestautomation.com/practice-test-login/.
+2025-04-05 11:04:26,124 - INFO - Performing login...
+2025-04-05 11:04:36,590 - ERROR - Failed to perform login: Message: 
+Stacktrace:
+#0 0x5df5794971fa <unknown>
+#1 0x5df578fa7810 <unknown>
+#2 0x5df578ff6506 <unknown>
+#3 0x5df578ff67a1 <unknown>
+#4 0x5df57903bc24 <unknown>
+#5 0x5df57901a5ad <unknown>
+#6 0x5df579039007 <unknown>
+#7 0x5df57901a323 <unknown>
+#8 0x5df578fe8de0 <unknown>
+#9 0x5df578fe9dbe <unknown>
+#10 0x5df57946312b <unknown>
+#11 0x5df5794670c7 <unknown>
+#12 0x5df5794506cc <unknown>
+#13 0x5df579467c47 <unknown>
+#14 0x5df57943567f <unknown>
+#15 0x5df579486288 <unknown>
+#16 0x5df579486450 <unknown>
+#17 0x5df579496076 <unknown>
+#18 0x701e1bc94ac3 <unknown>
+
+2025-04-05 11:04:36,590 - ERROR - Test case TC003 failed: Unable to perform login.
+2025-04-05 11:04:36,681 - INFO - Test case TC003 execution status: FAIL
+2025-04-05 11:04:36,681 - INFO - 
+Processing test case: TC004 - Verify responsiveness of the page
+2025-04-05 11:04:36,682 - INFO - Generating Selenium script for test case TC004 - Verify responsiveness of the page
+2025-04-05 11:04:43,033 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:04:43,035 - INFO - Executing test script for test case TC004
+2025-04-05 11:04:43,035 - INFO - Running script: test_script_TC004.py
+2025-04-05 11:04:43,160 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:04:43,160 - INFO - Standard output: 
+2025-04-05 11:04:43,160 - WARNING - Standard error: 2025-04-05 11:04:43,139 - ERROR - Test Case TC004 failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-04-05 11:04:43,139 - ERROR - Error quitting WebDriver: local variable 'driver' referenced before assignment
+2025-04-05 11:04:43,160 - INFO - Test case TC004 execution status: FAIL
+2025-04-05 11:04:43,160 - INFO - 
+Processing test case: TC005 - Verify navigation menu functionality
+2025-04-05 11:04:43,160 - INFO - Generating Selenium script for test case TC005 - Verify navigation menu functionality
+2025-04-05 11:04:47,889 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:04:47,890 - INFO - Executing test script for test case TC005
+2025-04-05 11:04:47,891 - INFO - Running script: test_script_TC005.py
+2025-04-05 11:05:00,416 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:05:00,416 - INFO - Standard output: 
+2025-04-05 11:05:00,416 - WARNING - Standard error: 2025-04-05 11:04:48,398 - INFO - Selenium WebDriver set up
+2025-04-05 11:04:49,914 - INFO - Navigated to the login page: https://practicetestautomation.com/practice-test-login/login.html
+2025-04-05 11:05:00,316 - ERROR - Username field not found
+2025-04-05 11:05:00,316 - ERROR - Login failed
+2025-04-05 11:05:00,416 - INFO - Test case TC005 execution status: FAIL
+2025-04-05 11:05:00,416 - INFO - 
+Processing test case: TC006 - Verify input validation for username field
+2025-04-05 11:05:00,416 - INFO - Generating Selenium script for test case TC006 - Verify input validation for username field
+2025-04-05 11:05:07,385 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:05:07,387 - INFO - Executing test script for test case TC006
+2025-04-05 11:05:07,388 - INFO - Running script: test_script_TC006.py
+2025-04-05 11:05:33,439 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:05:33,439 - INFO - Standard output: Test case TC006 failed
+2025-04-05 11:05:33,439 - WARNING - Standard error: 2025-04-05 11:05:12,380 - INFO - Successfully navigated to https://practicetestautomation.com/practice-test-login/
+2025-04-05 11:05:12,429 - INFO - Entered username: student
+2025-04-05 11:05:12,459 - INFO - Entered password: Password123
+2025-04-05 11:05:22,889 - ERROR - Failed to perform login: Message: 
+Stacktrace:
+#0 0x5f0e64c161fa <unknown>
+#1 0x5f0e64726810 <unknown>
+#2 0x5f0e64775506 <unknown>
+#3 0x5f0e647757a1 <unknown>
+#4 0x5f0e647bac24 <unknown>
+#5 0x5f0e647995ad <unknown>
+#6 0x5f0e647b8007 <unknown>
+#7 0x5f0e64799323 <unknown>
+#8 0x5f0e64767de0 <unknown>
+#9 0x5f0e64768dbe <unknown>
+#10 0x5f0e64be212b <unknown>
+#11 0x5f0e64be60c7 <unknown>
+#12 0x5f0e64bcf6cc <unknown>
+#13 0x5f0e64be6c47 <unknown>
+#14 0x5f0e64bb467f <unknown>
+#15 0x5f0e64c05288 <unknown>
+#16 0x5f0e64c05450 <unknown>
+#17 0x5f0e64c15076 <unknown>
+#18 0x7b73c6094ac3 <unknown>
+
+2025-04-05 11:05:22,921 - INFO - Entered invalid username: invalid_username
+2025-04-05 11:05:33,336 - ERROR - Failed to execute test steps: Message: 
+Stacktrace:
+#0 0x5f0e64c161fa <unknown>
+#1 0x5f0e64726810 <unknown>
+#2 0x5f0e64775506 <unknown>
+#3 0x5f0e647757a1 <unknown>
+#4 0x5f0e647bac24 <unknown>
+#5 0x5f0e647995ad <unknown>
+#6 0x5f0e647b8007 <unknown>
+#7 0x5f0e64799323 <unknown>
+#8 0x5f0e64767de0 <unknown>
+#9 0x5f0e64768dbe <unknown>
+#10 0x5f0e64be212b <unknown>
+#11 0x5f0e64be60c7 <unknown>
+#12 0x5f0e64bcf6cc <unknown>
+#13 0x5f0e64be6c47 <unknown>
+#14 0x5f0e64bb467f <unknown>
+#15 0x5f0e64c05288 <unknown>
+#16 0x5f0e64c05450 <unknown>
+#17 0x5f0e64c15076 <unknown>
+#18 0x7b73c6094ac3 <unknown>
+
+2025-04-05 11:05:33,336 - ERROR - Test case TC006 failed
+2025-04-05 11:05:33,439 - INFO - Test case TC006 execution status: FAIL
+2025-04-05 11:05:33,439 - INFO - 
+Processing test case: TC007 - Verify load time of the webpage
+2025-04-05 11:05:33,439 - INFO - Generating Selenium script for test case TC007 - Verify load time of the webpage
+2025-04-05 11:05:39,942 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:05:39,944 - INFO - Executing test script for test case TC007
+2025-04-05 11:05:39,945 - INFO - Running script: test_script_TC007.py
+2025-04-05 11:05:55,574 - INFO - Script execution completed with exit code: 0
+2025-04-05 11:05:55,574 - INFO - Standard output: 
+2025-04-05 11:05:55,574 - WARNING - Standard error: 2025-04-05 11:05:40,041 - INFO - Setting up the Selenium WebDriver with Chrome...
+2025-04-05 11:05:40,459 - INFO - Navigating to the URL: https://practicetestautomation.com/practice-test-login/...
+2025-04-05 11:05:44,945 - INFO - Waiting for the username field to be clickable...
+2025-04-05 11:05:44,966 - INFO - Entering the username...
+2025-04-05 11:05:44,999 - INFO - Waiting for the password field to be clickable...
+2025-04-05 11:05:45,014 - INFO - Entering the password...
+2025-04-05 11:05:45,038 - INFO - Waiting for the login button to be clickable...
+2025-04-05 11:05:55,463 - ERROR - Failed to perform the login operation: Message: 
+Stacktrace:
+#0 0x5acc7b1291fa <unknown>
+#1 0x5acc7ac39810 <unknown>
+#2 0x5acc7ac88506 <unknown>
+#3 0x5acc7ac887a1 <unknown>
+#4 0x5acc7accdc24 <unknown>
+#5 0x5acc7acac5ad <unknown>
+#6 0x5acc7accb007 <unknown>
+#7 0x5acc7acac323 <unknown>
+#8 0x5acc7ac7ade0 <unknown>
+#9 0x5acc7ac7bdbe <unknown>
+#10 0x5acc7b0f512b <unknown>
+#11 0x5acc7b0f90c7 <unknown>
+#12 0x5acc7b0e26cc <unknown>
+#13 0x5acc7b0f9c47 <unknown>
+#14 0x5acc7b0c767f <unknown>
+#15 0x5acc7b118288 <unknown>
+#16 0x5acc7b118450 <unknown>
+#17 0x5acc7b128076 <unknown>
+#18 0x7a926e894ac3 <unknown>
+
+2025-04-05 11:05:55,468 - INFO - Test Case TC007: FAIL - The webpage took 4.465 seconds to load, which exceeds the expected load time of 3 seconds.
+2025-04-05 11:05:55,574 - INFO - Test case TC007 execution status: FAIL
+2025-04-05 11:05:55,574 - INFO - 
+Processing test case: TC008 - Verify form validation for login form
+2025-04-05 11:05:55,574 - INFO - Generating Selenium script for test case TC008 - Verify form validation for login form
+2025-04-05 11:06:00,548 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 11:06:00,551 - INFO - Executing test script for test case TC008
+2025-04-05 11:06:00,551 - INFO - Running script: test_script_TC008.py
+2025-04-05 11:06:00,673 - INFO - Script execution completed with exit code: 1
+2025-04-05 11:06:00,673 - INFO - Standard output: 
+2025-04-05 11:06:00,673 - WARNING - Standard error: Traceback (most recent call last):
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC008.py", line 7, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+2025-04-05 11:06:00,673 - INFO - Test case TC008 execution status: FAIL
+2025-04-05 11:06:00,673 - INFO - 
+Test execution summary:
+2025-04-05 11:06:00,673 - INFO - Total test cases: 8
+2025-04-05 11:06:00,673 - INFO - Passed: 0 (0.00%)
+2025-04-05 11:06:00,673 - INFO - Failed: 8
+2025-04-05 11:06:00,673 - INFO - Errors: 0
+2025-04-05 11:06:00,673 - INFO - Timeouts: 0

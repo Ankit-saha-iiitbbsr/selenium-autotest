@@ -1,0 +1,219 @@
+2025-04-04 20:46:25,722 - INFO - Starting new test run at 20250404_204625
+2025-04-04 20:46:25,722 - INFO - Starting test generation for URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:46:25,722 - INFO - Navigating to URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:46:31,455 - INFO - Capturing initial page state...
+2025-04-04 20:46:31,665 - INFO - Screenshot saved to screenshots/before_login_20250404_204631.png
+2025-04-04 20:46:31,665 - INFO - --- Current page state (before_login) ---
+2025-04-04 20:46:31,668 - INFO - Current URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:46:31,736 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_204631.png
+2025-04-04 20:46:31,747 - INFO - Found 98 elements on page
+2025-04-04 20:46:31,795 - INFO - Element 1: <html> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:31,816 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 20:46:31,831 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 20:46:31,857 - INFO - Element 4: <title> id='' class='' text=''
+2025-04-04 20:46:31,880 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 20:46:31,895 - INFO - Element 6: <script> id='' class='' text=''
+2025-04-04 20:46:31,932 - INFO - Element 7: <body> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:31,963 - INFO - Element 8: <div> id='mainLayer' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:31,982 - INFO - Element 9: <div> id='masthead' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:32,010 - INFO - Element 10: <h1> id='siteName' class='' text=''
+2025-04-04 20:46:32,010 - INFO - --- End of page state ---
+2025-04-04 20:46:32,012 - INFO - Analyzing login page...
+2025-04-04 20:46:33,822 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:46:33,828 - INFO - Login attempt with username: test
+2025-04-04 20:46:33,828 - INFO - Using selectors - Username: input[name='uname'], Password: input[name='pass'], Submit: input[type='submit']
+2025-04-04 20:46:37,441 - INFO - Screenshot saved to screenshots/after_login_20250404_204637.png
+2025-04-04 20:46:37,441 - INFO - --- Current page state (after_login) ---
+2025-04-04 20:46:37,444 - INFO - Current URL: http://testphp.vulnweb.com/userinfo.php
+2025-04-04 20:46:37,517 - INFO - Screenshot saved to screenshots/page_state_after_login_20250404_204637.png
+2025-04-04 20:46:37,528 - INFO - Found 110 elements on page
+2025-04-04 20:46:37,568 - INFO - Element 1: <html> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:37,588 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 20:46:37,611 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 20:46:37,626 - INFO - Element 4: <title> id='' class='' text=''
+2025-04-04 20:46:37,647 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 20:46:37,669 - INFO - Element 6: <script> id='' class='' text=''
+2025-04-04 20:46:37,707 - INFO - Element 7: <body> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:37,742 - INFO - Element 8: <div> id='mainLayer' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:37,761 - INFO - Element 9: <div> id='masthead' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:46:37,785 - INFO - Element 10: <h1> id='siteName' class='' text=''
+2025-04-04 20:46:37,785 - INFO - --- End of page state ---
+2025-04-04 20:46:38,501 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:46:38,503 - INFO - Login successful!
+2025-04-04 20:46:38,503 - INFO - Generating test cases...
+2025-04-04 20:46:38,503 - INFO - Generating test cases for the current page...
+2025-04-04 20:46:38,587 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250404_204638.png
+2025-04-04 20:46:38,587 - INFO - Sending request to LLM for test case generation...
+2025-04-04 20:46:42,320 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:46:42,322 - INFO - Received response from LLM
+2025-04-04 20:46:42,323 - INFO - Successfully parsed 5 test cases
+2025-04-04 20:46:42,323 - INFO - Generated test case: TC001 - Verify update form submission (positive)
+2025-04-04 20:46:42,323 - INFO - Generated test case: TC002 - Verify empty name field validation (negative)
+2025-04-04 20:46:42,323 - INFO - Generated test case: TC003 - Verify invalid credit card number validation (negative)
+2025-04-04 20:46:42,323 - INFO - Generated test case: TC004 - Verify navigation to cart page (positive)
+2025-04-04 20:46:42,323 - INFO - Generated test case: TC005 - Verify search functionality (positive)
+2025-04-04 20:46:42,324 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-04 20:46:42,324 - INFO - 
+Processing test case: TC001 - Verify update form submission
+2025-04-04 20:46:42,324 - INFO - Generating Selenium script for test case TC001 - Verify update form submission
+2025-04-04 20:46:42,500 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 20:46:42,501 - INFO - Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2025-04-04 20:47:01,981 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:47:01,983 - INFO - Executing test script for test case TC001
+2025-04-04 20:47:01,984 - INFO - Running script: test_script_TC001.py
+2025-04-04 20:47:02,101 - INFO - Script execution completed with exit code: 1
+2025-04-04 20:47:02,101 - INFO - Standard output: 
+2025-04-04 20:47:02,101 - WARNING - Standard error: 2025-04-04 20:47:02,083 - INFO - Setting up Chrome WebDriver...
+Traceback (most recent call last):
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 180, in <module>
+    main()
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 150, in main
+    driver = setup_webdriver()
+  File "/home/ankits/Desktop/autotest/autotest/test_script_TC001.py", line 21, in setup_webdriver
+    driver = webdriver.Chrome(executable_path=webdriver_path, options=options)
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+2025-04-04 20:47:02,101 - INFO - Test case TC001 execution status: FAIL
+2025-04-04 20:47:02,101 - INFO - 
+Processing test case: TC002 - Verify empty name field validation
+2025-04-04 20:47:02,101 - INFO - Generating Selenium script for test case TC002 - Verify empty name field validation
+2025-04-04 20:47:02,225 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 20:47:02,225 - INFO - Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2025-04-04 20:47:19,990 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:47:19,992 - INFO - Executing test script for test case TC002
+2025-04-04 20:47:19,992 - INFO - Running script: test_script_TC002.py
+2025-04-04 20:47:45,052 - INFO - Script execution completed with exit code: 0
+2025-04-04 20:47:45,052 - INFO - Standard output: Test case TC002 failed
+2025-04-04 20:47:45,052 - WARNING - Standard error: 2025-04-04 20:47:24,174 - INFO - Navigated to http://testphp.vulnweb.com/login.php
+2025-04-04 20:47:34,548 - ERROR - Login failed: Timeout exception occurred
+2025-04-04 20:47:44,962 - ERROR - Test case TC002 failed: Timeout exception occurred
+2025-04-04 20:47:45,052 - INFO - Test case TC002 execution status: FAIL
+2025-04-04 20:47:45,052 - INFO - 
+Processing test case: TC003 - Verify invalid credit card number validation
+2025-04-04 20:47:45,052 - INFO - Generating Selenium script for test case TC003 - Verify invalid credit card number validation
+2025-04-04 20:47:50,649 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:47:50,651 - INFO - Executing test script for test case TC003
+2025-04-04 20:47:50,651 - INFO - Running script: test_script_TC003.py
+2025-04-04 20:48:26,721 - INFO - Script execution completed with exit code: 0
+2025-04-04 20:48:26,721 - INFO - Standard output: 
+2025-04-04 20:48:26,721 - WARNING - Standard error: 2025-04-04 20:47:50,937 - INFO - Navigating to http://testphp.vulnweb.com/login.php
+2025-04-04 20:48:05,383 - ERROR - Failed to perform login: Message: 
+Stacktrace:
+#0 0x57bb7607f1fa <unknown>
+#1 0x57bb75b8f810 <unknown>
+#2 0x57bb75bde506 <unknown>
+#3 0x57bb75bde7a1 <unknown>
+#4 0x57bb75c23c24 <unknown>
+#5 0x57bb75c025ad <unknown>
+#6 0x57bb75c21007 <unknown>
+#7 0x57bb75c02323 <unknown>
+#8 0x57bb75bd0de0 <unknown>
+#9 0x57bb75bd1dbe <unknown>
+#10 0x57bb7604b12b <unknown>
+#11 0x57bb7604f0c7 <unknown>
+#12 0x57bb760386cc <unknown>
+#13 0x57bb7604fc47 <unknown>
+#14 0x57bb7601d67f <unknown>
+#15 0x57bb7606e288 <unknown>
+#16 0x57bb7606e450 <unknown>
+#17 0x57bb7607e076 <unknown>
+#18 0x73b6a9294ac3 <unknown>
+
+2025-04-04 20:48:16,200 - ERROR - Failed to execute test steps: Message: 
+Stacktrace:
+#0 0x57bb7607f1fa <unknown>
+#1 0x57bb75b8f810 <unknown>
+#2 0x57bb75bde506 <unknown>
+#3 0x57bb75bde7a1 <unknown>
+#4 0x57bb75c23c24 <unknown>
+#5 0x57bb75c025ad <unknown>
+#6 0x57bb75c21007 <unknown>
+#7 0x57bb75c02323 <unknown>
+#8 0x57bb75bd0de0 <unknown>
+#9 0x57bb75bd1dbe <unknown>
+#10 0x57bb7604b12b <unknown>
+#11 0x57bb7604f0c7 <unknown>
+#12 0x57bb760386cc <unknown>
+#13 0x57bb7604fc47 <unknown>
+#14 0x57bb7601d67f <unknown>
+#15 0x57bb7606e288 <unknown>
+#16 0x57bb7606e450 <unknown>
+#17 0x57bb7607e076 <unknown>
+#18 0x73b6a9294ac3 <unknown>
+
+2025-04-04 20:48:26,627 - ERROR - Failed to verify test result: Message: 
+Stacktrace:
+#0 0x57bb7607f1fa <unknown>
+#1 0x57bb75b8f810 <unknown>
+#2 0x57bb75bde506 <unknown>
+#3 0x57bb75bde7a1 <unknown>
+#4 0x57bb75c23c24 <unknown>
+#5 0x57bb75c025ad <unknown>
+#6 0x57bb75c21007 <unknown>
+#7 0x57bb75c02323 <unknown>
+#8 0x57bb75bd0de0 <unknown>
+#9 0x57bb75bd1dbe <unknown>
+#10 0x57bb7604b12b <unknown>
+#11 0x57bb7604f0c7 <unknown>
+#12 0x57bb760386cc <unknown>
+#13 0x57bb7604fc47 <unknown>
+#14 0x57bb7601d67f <unknown>
+#15 0x57bb7606e288 <unknown>
+#16 0x57bb7606e450 <unknown>
+#17 0x57bb7607e076 <unknown>
+#18 0x73b6a9294ac3 <unknown>
+
+2025-04-04 20:48:26,628 - ERROR - Test TC003 failed: Error message is not displayed for invalid credit card number
+2025-04-04 20:48:26,721 - INFO - Test case TC003 execution status: FAIL
+2025-04-04 20:48:26,721 - INFO - 
+Processing test case: TC004 - Verify navigation to cart page
+2025-04-04 20:48:26,721 - INFO - Generating Selenium script for test case TC004 - Verify navigation to cart page
+2025-04-04 20:48:31,801 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:48:31,805 - INFO - Executing test script for test case TC004
+2025-04-04 20:48:31,806 - INFO - Running script: test_script_TC004.py
+2025-04-04 20:48:47,080 - INFO - Script execution completed with exit code: 0
+2025-04-04 20:48:47,080 - INFO - Standard output: No login required
+Clicked on the 'Your cart' link
+Cart page header: Error
+Test case TC004 passed
+2025-04-04 20:48:47,080 - INFO - Test case TC004 execution status: FAIL
+2025-04-04 20:48:47,080 - INFO - 
+Processing test case: TC005 - Verify search functionality
+2025-04-04 20:48:47,080 - INFO - Generating Selenium script for test case TC005 - Verify search functionality
+2025-04-04 20:48:52,165 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:48:52,167 - INFO - Executing test script for test case TC005
+2025-04-04 20:48:52,167 - INFO - Running script: test_script_TC005.py
+2025-04-04 20:49:17,902 - INFO - Script execution completed with exit code: 0
+2025-04-04 20:49:17,902 - INFO - Standard output: Login fields not found
+Search query entered
+Search button clicked
+Test case TC005 failed: Message: 
+Stacktrace:
+#0 0x5adf404501fa <unknown>
+#1 0x5adf3ff60810 <unknown>
+#2 0x5adf3ffaf506 <unknown>
+#3 0x5adf3ffaf7a1 <unknown>
+#4 0x5adf3fff4c24 <unknown>
+#5 0x5adf3ffd35ad <unknown>
+#6 0x5adf3fff2007 <unknown>
+#7 0x5adf3ffd3323 <unknown>
+#8 0x5adf3ffa1de0 <unknown>
+#9 0x5adf3ffa2dbe <unknown>
+#10 0x5adf4041c12b <unknown>
+#11 0x5adf404200c7 <unknown>
+#12 0x5adf404096cc <unknown>
+#13 0x5adf40420c47 <unknown>
+#14 0x5adf403ee67f <unknown>
+#15 0x5adf4043f288 <unknown>
+#16 0x5adf4043f450 <unknown>
+#17 0x5adf4044f076 <unknown>
+#18 0x786608a94ac3 <unknown>
+
+Test case TC005 failed
+2025-04-04 20:49:17,902 - INFO - Test case TC005 execution status: FAIL
+2025-04-04 20:49:17,903 - INFO - 
+Test execution summary:
+2025-04-04 20:49:17,903 - INFO - Total test cases: 5
+2025-04-04 20:49:17,903 - INFO - Passed: 0 (0.00%)
+2025-04-04 20:49:17,903 - INFO - Failed: 5
+2025-04-04 20:49:17,903 - INFO - Errors: 0
+2025-04-04 20:49:17,903 - INFO - Timeouts: 0

@@ -1,0 +1,224 @@
+2025-04-04 17:20:43,186 - INFO - Starting new test run at 20250404_172043
+2025-04-04 17:20:43,186 - INFO - Starting test generation for URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 17:20:43,186 - INFO - Navigating to URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 17:20:46,018 - INFO - Capturing initial page state...
+2025-04-04 17:20:46,220 - INFO - Screenshot saved to screenshots/before_login_20250404_172046.png
+2025-04-04 17:20:46,220 - INFO - --- Current page state (before_login) ---
+2025-04-04 17:20:46,223 - INFO - Current URL: https://ourgoalplan.co.in/Login.aspx
+2025-04-04 17:20:46,291 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_172046.png
+2025-04-04 17:20:46,303 - INFO - Found 58 elements on page
+2025-04-04 17:20:46,341 - INFO - Element 1: <html> id='' class='' text='Login
+Forgot Password
+Stay Logged In
+© Mindfire So...'
+2025-04-04 17:20:46,361 - INFO - Element 2: <head> id='HeaderLogin' class='' text=''
+2025-04-04 17:20:46,376 - INFO - Element 3: <title> id='' class='' text=''
+2025-04-04 17:20:46,396 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-04 17:20:46,412 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-04 17:20:46,431 - INFO - Element 6: <meta> id='' class='' text=''
+2025-04-04 17:20:46,451 - INFO - Element 7: <meta> id='' class='' text=''
+2025-04-04 17:20:46,471 - INFO - Element 8: <meta> id='' class='' text=''
+2025-04-04 17:20:46,494 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 17:20:46,509 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-04 17:20:46,509 - INFO - --- End of page state ---
+2025-04-04 17:20:46,511 - INFO - Analyzing login page...
+2025-04-04 17:20:50,328 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:20:50,334 - INFO - Login attempt with username: Ankit.s
+2025-04-04 17:20:50,334 - INFO - Using selectors - Username: input[name='txtName'], Password: input[name='txtPassword'], Submit: input[type='submit'][name='btnLogin']
+2025-04-04 17:20:55,560 - INFO - Screenshot saved to screenshots/after_login_20250404_172055.png
+2025-04-04 17:20:55,560 - INFO - --- Current page state (after_login) ---
+2025-04-04 17:20:55,562 - INFO - Current URL: https://ourgoalplan.co.in/GoalSheet.aspx
+2025-04-04 17:20:55,673 - INFO - Screenshot saved to screenshots/page_state_after_login_20250404_172055.png
+2025-04-04 17:20:55,705 - INFO - Found 621 elements on page
+2025-04-04 17:20:55,780 - INFO - Element 1: <html> id='' class='' text='Celebrating a quarter-century of quirky ideas, bol...'
+2025-04-04 17:20:55,804 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 17:20:55,824 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 17:20:55,850 - INFO - Element 4: <link> id='' class='' text=''
+2025-04-04 17:20:55,866 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 17:20:55,896 - INFO - Element 6: <link> id='' class='' text=''
+2025-04-04 17:20:55,913 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-04 17:20:55,939 - INFO - Element 8: <script> id='' class='' text=''
+2025-04-04 17:20:55,962 - INFO - Element 9: <script> id='' class='' text=''
+2025-04-04 17:20:55,977 - INFO - Element 10: <script> id='' class='' text=''
+2025-04-04 17:20:55,978 - INFO - --- End of page state ---
+2025-04-04 17:20:56,365 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 17:20:56,365 - INFO - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-04-04 17:21:02,469 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:21:02,471 - INFO - Login successful!
+2025-04-04 17:21:02,472 - INFO - Generating test cases...
+2025-04-04 17:21:02,472 - INFO - Generating test cases for the current page...
+2025-04-04 17:21:02,568 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250404_172102.png
+2025-04-04 17:21:02,568 - INFO - Sending request to LLM for test case generation...
+2025-04-04 17:21:02,707 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 17:21:02,707 - INFO - Retrying request to /openai/v1/chat/completions in 43.000000 seconds
+2025-04-04 17:21:55,514 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:21:55,516 - INFO - Received response from LLM
+2025-04-04 17:21:55,516 - INFO - Successfully parsed 5 test cases
+2025-04-04 17:21:55,517 - INFO - Generated test case: TC001 - Verify successful login with valid credentials (positive)
+2025-04-04 17:21:55,517 - INFO - Generated test case: TC002 - Test invalid login with incorrect password (negative)
+2025-04-04 17:21:55,517 - INFO - Generated test case: TC003 - Test form validation for goal creation (positive)
+2025-04-04 17:21:55,517 - INFO - Generated test case: TC004 - Test error handling for empty goal description (negative)
+2025-04-04 17:21:55,517 - INFO - Generated test case: TC005 - Test UI responsiveness on different screen sizes (ui/ux)
+2025-04-04 17:21:55,518 - INFO - Generated 5 test cases, saved to results/test_cases.json
+2025-04-04 17:21:55,518 - INFO - 
+Processing test case: TC001 - Verify successful login with valid credentials
+2025-04-04 17:21:55,518 - INFO - Generating Selenium script for test case TC001 - Verify successful login with valid credentials
+2025-04-04 17:21:55,600 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 17:21:55,601 - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-04-04 17:22:10,770 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:22:10,772 - INFO - Executing test script for test case TC001
+2025-04-04 17:22:10,772 - INFO - Running script: test_script_TC001.py
+2025-04-04 17:22:22,344 - INFO - Script execution completed with exit code: 0
+2025-04-04 17:22:22,344 - INFO - Standard output: Starting test execution for TC001
+Setting up Chrome driver...
+Navigating to login page...
+Waiting for username field...
+Error during login: Message: 
+Stacktrace:
+#0 0x65264bf0a1fa <unknown>
+#1 0x65264ba1a810 <unknown>
+#2 0x65264ba69506 <unknown>
+#3 0x65264ba697a1 <unknown>
+#4 0x65264baaec24 <unknown>
+#5 0x65264ba8d5ad <unknown>
+#6 0x65264baac007 <unknown>
+#7 0x65264ba8d323 <unknown>
+#8 0x65264ba5bde0 <unknown>
+#9 0x65264ba5cdbe <unknown>
+#10 0x65264bed612b <unknown>
+#11 0x65264beda0c7 <unknown>
+#12 0x65264bec36cc <unknown>
+#13 0x65264bedac47 <unknown>
+#14 0x65264bea867f <unknown>
+#15 0x65264bef9288 <unknown>
+#16 0x65264bef9450 <unknown>
+#17 0x65264bf09076 <unknown>
+#18 0x7029eb894ac3 <unknown>
+
+TC001 - FAIL: Login failed
+Closing browser session...
+2025-04-04 17:22:22,344 - INFO - Test case TC001 execution status: FAIL
+2025-04-04 17:22:22,344 - INFO - 
+Processing test case: TC002 - Test invalid login with incorrect password
+2025-04-04 17:22:22,344 - INFO - Generating Selenium script for test case TC002 - Test invalid login with incorrect password
+2025-04-04 17:22:35,786 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:22:35,789 - INFO - Executing test script for test case TC002
+2025-04-04 17:22:35,789 - INFO - Running script: test_script_TC002.py
+2025-04-04 17:22:47,610 - INFO - Script execution completed with exit code: 0
+2025-04-04 17:22:47,610 - INFO - Standard output: Starting test case TC002: Test invalid login with incorrect password
+Navigating to login page...
+Performing login with invalid password...
+Element interaction failed: Message: 
+Stacktrace:
+#0 0x567ab263e1fa <unknown>
+#1 0x567ab214e810 <unknown>
+#2 0x567ab219d506 <unknown>
+#3 0x567ab219d7a1 <unknown>
+#4 0x567ab21e2c24 <unknown>
+#5 0x567ab21c15ad <unknown>
+#6 0x567ab21e0007 <unknown>
+#7 0x567ab21c1323 <unknown>
+#8 0x567ab218fde0 <unknown>
+#9 0x567ab2190dbe <unknown>
+#10 0x567ab260a12b <unknown>
+#11 0x567ab260e0c7 <unknown>
+#12 0x567ab25f76cc <unknown>
+#13 0x567ab260ec47 <unknown>
+#14 0x567ab25dc67f <unknown>
+#15 0x567ab262d288 <unknown>
+#16 0x567ab262d450 <unknown>
+#17 0x567ab263d076 <unknown>
+#18 0x742e30a94ac3 <unknown>
+
+Test failed: No error message was displayed
+Test case TC002 FAILED
+Closing browser...
+2025-04-04 17:22:47,611 - INFO - Test case TC002 execution status: FAIL
+2025-04-04 17:22:47,611 - INFO - 
+Processing test case: TC003 - Test form validation for goal creation
+2025-04-04 17:22:47,611 - INFO - Generating Selenium script for test case TC003 - Test form validation for goal creation
+2025-04-04 17:23:02,177 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:23:02,179 - INFO - Executing test script for test case TC003
+2025-04-04 17:23:02,180 - INFO - Running script: test_script_TC003.py
+2025-04-04 17:23:02,307 - INFO - Script execution completed with exit code: 0
+2025-04-04 17:23:02,307 - INFO - Standard output: Starting test case TC003: Test form validation for goal creation
+Test TC003 failed with exception: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+2025-04-04 17:23:02,307 - INFO - Test case TC003 execution status: FAIL
+2025-04-04 17:23:02,308 - INFO - 
+Processing test case: TC004 - Test error handling for empty goal description
+2025-04-04 17:23:02,308 - INFO - Generating Selenium script for test case TC004 - Test error handling for empty goal description
+2025-04-04 17:23:02,460 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 17:23:02,461 - INFO - Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2025-04-04 17:23:20,318 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:23:20,320 - INFO - Executing test script for test case TC004
+2025-04-04 17:23:20,321 - INFO - Running script: test_script_TC004.py
+2025-04-04 17:23:33,223 - INFO - Script execution completed with exit code: 0
+2025-04-04 17:23:33,223 - INFO - Standard output: TC004 - Navigating to login page...
+TC004 - Performing login...
+TC004 - Test FAILED with exception: Message: 
+Stacktrace:
+#0 0x61b4909221fa <unknown>
+#1 0x61b490432810 <unknown>
+#2 0x61b490481506 <unknown>
+#3 0x61b4904817a1 <unknown>
+#4 0x61b4904c6c24 <unknown>
+#5 0x61b4904a55ad <unknown>
+#6 0x61b4904c4007 <unknown>
+#7 0x61b4904a5323 <unknown>
+#8 0x61b490473de0 <unknown>
+#9 0x61b490474dbe <unknown>
+#10 0x61b4908ee12b <unknown>
+#11 0x61b4908f20c7 <unknown>
+#12 0x61b4908db6cc <unknown>
+#13 0x61b4908f2c47 <unknown>
+#14 0x61b4908c067f <unknown>
+#15 0x61b490911288 <unknown>
+#16 0x61b490911450 <unknown>
+#17 0x61b490921076 <unknown>
+#18 0x7bb127c94ac3 <unknown>
+
+Stack trace: <traceback object at 0x7d01eaad50c0>
+TC004 - Closing browser session...
+2025-04-04 17:23:33,223 - INFO - Test case TC004 execution status: FAIL
+2025-04-04 17:23:33,223 - INFO - 
+Processing test case: TC005 - Test UI responsiveness on different screen sizes
+2025-04-04 17:23:33,224 - INFO - Generating Selenium script for test case TC005 - Test UI responsiveness on different screen sizes
+2025-04-04 17:23:47,644 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:23:47,646 - INFO - Executing test script for test case TC005
+2025-04-04 17:23:47,646 - INFO - Running script: test_script_TC005.py
+2025-04-04 17:24:00,305 - INFO - Script execution completed with exit code: 0
+2025-04-04 17:24:00,305 - INFO - Standard output: Starting test case TC005: Test UI responsiveness on different screen sizes
+Login failed: Message: 
+Stacktrace:
+#0 0x5b6da88ff1fa <unknown>
+#1 0x5b6da840f810 <unknown>
+#2 0x5b6da845e506 <unknown>
+#3 0x5b6da845e7a1 <unknown>
+#4 0x5b6da84a3c24 <unknown>
+#5 0x5b6da84825ad <unknown>
+#6 0x5b6da84a1007 <unknown>
+#7 0x5b6da8482323 <unknown>
+#8 0x5b6da8450de0 <unknown>
+#9 0x5b6da8451dbe <unknown>
+#10 0x5b6da88cb12b <unknown>
+#11 0x5b6da88cf0c7 <unknown>
+#12 0x5b6da88b86cc <unknown>
+#13 0x5b6da88cfc47 <unknown>
+#14 0x5b6da889d67f <unknown>
+#15 0x5b6da88ee288 <unknown>
+#16 0x5b6da88ee450 <unknown>
+#17 0x5b6da88fe076 <unknown>
+#18 0x7de476e94ac3 <unknown>
+
+
+Test case TC005 FAILED: UI responsiveness issues detected
+
+Test execution completed
+2025-04-04 17:24:00,305 - INFO - Test case TC005 execution status: FAIL
+2025-04-04 17:24:00,306 - INFO - 
+Test execution summary:
+2025-04-04 17:24:00,306 - INFO - Total test cases: 5
+2025-04-04 17:24:00,306 - INFO - Passed: 0 (0.00%)
+2025-04-04 17:24:00,306 - INFO - Failed: 5
+2025-04-04 17:24:00,306 - INFO - Errors: 0
+2025-04-04 17:24:00,306 - INFO - Timeouts: 0

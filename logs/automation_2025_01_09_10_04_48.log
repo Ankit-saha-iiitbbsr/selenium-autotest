@@ -1,0 +1,425 @@
+01-09-2025 10:04:48: INFO: Application Started
+01-09-2025 10:04:48: INFO: Main URL Entered: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:48: INFO: Chrome WebDriver Instance Started
+01-09-2025 10:04:51: INFO: Navigated to: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:51: INFO: Get the page content of: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:59: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:04:59: INFO: Raw json data in string format:
+01-09-2025 10:04:59: INFO: [{
+    "TestCaseName": "Empty Username Field Test",
+    "TestCaseDescription": "Test case where the username field is left empty",
+    "InvalidData": {
+        "txtName": ""
+    }
+},
+{
+    "TestCaseName": "Empty Password Field Test",
+    "TestCaseDescription": "Test case where the password field is left empty",
+    "InvalidData": {
+        "txtPassword": ""
+    }
+},
+{
+    "TestCaseName": "Invalid Username Field Test",
+    "TestCaseDescription": "Test case where the username field contains special characters and numbers",
+    "InvalidData": {
+        "txtName": ["$%#@", 1234]
+    }
+},
+{
+    "TestCaseName": "Invalid Password Field Test",
+    "TestCaseDescription": "Test case where the password field contains special characters and numbers",
+    "InvalidData": {
+        "txtPassword": ["$%#@", 1234]
+    }
+},
+{
+    "TestCaseName": "Username Length Exceed Test",
+    "TestCaseDescription": "Test case where the username field length exceeds the maximum limit",
+    "InvalidData": {
+        "txtName": "toolongusername1234567890toolongusername1234567890toolongusername1234567890"
+    }
+},
+{
+    "TestCaseName": "Password Length Exceed Test",
+    "TestCaseDescription": "Test case where the password field length exceeds the maximum limit",
+    "InvalidData": {
+        "txtPassword": "password1234567890password1234567890password1234567890password1234567890"
+    }
+},
+{
+    "TestCaseName": "Invalid Checkbox Value Test",
+    "TestCaseDescription": "Test case where the checkbox value is not a boolean",
+    "InvalidData": {
+        "chkRemember": ["True", "False", "Yes", "No"]
+    }
+},
+{
+    "TestCaseName": "Invalid Button Value Test",
+    "TestCaseDescription": "Test case where the button value is not 'Login'",
+    "InvalidData": {
+        "btnLogin": ["Submit", "Sign In", "Enter"]
+    }
+},
+{
+    "TestCaseName": "Empty Username and Password Fields Test",
+    "TestCaseDescription": "Test case where both username and password fields are left empty",
+    "InvalidData": {
+        "txtName": "",
+        "txtPassword": ""
+    }
+},
+{
+    "TestCaseName": "Invalid Username and Password Fields Test",
+    "TestCaseDescription": "Test case where both username and password fields contain special characters and numbers",
+    "InvalidData": {
+        "txtName": ["$%#@", 1234],
+        "txtPassword": ["$%#@", 1234]
+    }
+},
+{
+    "TestCaseName": "Username and Password Length Exceed Test",
+    "TestCaseDescription": "Test case where both username and password field lengths exceed the maximum limit",
+    "InvalidData": {
+        "txtName": "toolongusername1234567890toolongusername1234567890toolongusername1234567890",
+        "txtPassword": "password1234567890password1234567890password1234567890password1234567890"
+    }
+}
+]
+01-09-2025 10:04:59: INFO: fields: ('txtName', '')
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', '')
+01-09-2025 10:04:59: INFO: fields: ('txtName', ['$%#@', 1234])
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', ['$%#@', 1234])
+01-09-2025 10:04:59: INFO: fields: ('txtName', 'toolongusername1234567890toolongusername1234567890toolongusername1234567890')
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', 'password1234567890password1234567890password1234567890password1234567890')
+01-09-2025 10:04:59: INFO: fields: ('chkRemember', ['True', 'False', 'Yes', 'No'])
+01-09-2025 10:04:59: INFO: fields: ('btnLogin', ['Submit', 'Sign In', 'Enter'])
+01-09-2025 10:04:59: INFO: fields: ('txtName', '')
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', '')
+01-09-2025 10:04:59: INFO: fields: ('txtName', ['$%#@', 1234])
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', ['$%#@', 1234])
+01-09-2025 10:04:59: INFO: fields: ('txtName', 'toolongusername1234567890toolongusername1234567890toolongusername1234567890')
+01-09-2025 10:04:59: INFO: fields: ('txtPassword', 'password1234567890password1234567890password1234567890password1234567890')
+01-09-2025 10:05:03: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:06: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:09: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:13: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:15: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:19: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:22: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:25: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:28: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:32: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:36: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:37: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:37: INFO: Raw json data in string format:
+01-09-2025 10:05:37: INFO: [
+{
+  "Links": {
+    "Forgot Password": "//a[@id='lnkBtnResetPassword']",
+    "Mindfire Solutions": "//a[@href='http://www.mindfiresolutions.com']"
+  },
+  "Buttons": {
+    "Login": "//input[@id='btnLogin']"
+  }
+}
+]
+01-09-2025 10:05:48: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:05:48: INFO: Before clean input element from json:
+01-09-2025 10:05:48: INFO: {
+    "InputElements": {
+        "Username": "//input[@id='txtName']",
+        "Password": "//input[@id='txtPassword']"
+    }
+}
+01-09-2025 10:06:05: INFO: linkTextAnd_LocatorAndValidDatadict_dict 1: {'https://ourgoalplan.co.in/Login.aspx': {"//input[@id='txtName']": 'dyutid', "//input[@id='txtPassword']": 'Maa@0804puja'}}
+01-09-2025 10:06:05: INFO: Proceeding Begins...
+01-09-2025 10:06:06: INFO: Proceeding with other actions...
+01-09-2025 10:06:06: INFO: Proceeding Begins...
+01-09-2025 10:06:06: INFO: Proceeding with other actions...
+01-09-2025 10:06:10: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:10: INFO: convert valid test cases response into lists:
+01-09-2025 10:06:10: INFO: {
+    "TestCaseName": "Navigate to Next Page after Login",
+    "TestCaseDescription": "This test case navigates to the next page after successful login on the website.",
+    "ValidData": {
+        "Username": "dyutid",
+        "Password": "Maa@0804puja"
+    },
+    "TestSteps": [
+        {
+            "StepNumber": 1,
+            "StepDescription": "Open the web browser and go to the login page",
+            "Action": "Open the web URL: https://ourgoalplan.co.in/Login.aspx"
+        },
+        {
+            "StepNumber": 2,
+            "StepDescription": "Enter valid username and password",
+            "Action": "Enter 'dyutid' in the Username field and 'Maa@0804puja' in the Password field"
+        },
+        {
+            "StepNumber": 3,
+            "StepDescription": "Click on the 'Login' button",
+            "Action": "Click on the 'Login' button to submit the credentials"
+        },
+        {
+            "StepNumber": 4,
+            "StepDescription": "Verify navigation to the next page",
+            "Action": "Verify that the website navigates to the next page after successful login"
+        }
+    ]
+}
+01-09-2025 10:06:13: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:13: INFO: -------------------------------MAIN URL------------------------------------
+01-09-2025 10:06:13: INFO: Main URL: https://ourgoalplan.co.in/Login.aspxData
+01-09-2025 10:06:13: INFO: All Links and buttons: 
+01-09-2025 10:06:13: INFO: -------------------------------MAIN URL------------------------------------
+01-09-2025 10:06:13: INFO: ****
+01-09-2025 10:06:13: INFO: ['https://ourgoalplan.co.in/Login.aspx']
+01-09-2025 10:06:13: INFO: {"//input[@id='txtName']": 'dyutid', "//input[@id='txtPassword']": 'Maa@0804puja'}
+01-09-2025 10:06:13: INFO: ****
+01-09-2025 10:06:13: INFO: linkTextAnd_LocatorAndValidDatadict_dict 2: 
+01-09-2025 10:06:13: INFO: Proceeding Begins...
+01-09-2025 10:06:13: INFO: Proceeding with other actions...
+01-09-2025 10:06:13: INFO: Proceeding Begins...
+01-09-2025 10:06:13: INFO: Proceeding with other actions...
+01-09-2025 10:06:13: INFO: linkxpathlocator: //a[@id='lnkBtnResetPassword']
+01-09-2025 10:06:20: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:20: INFO: Raw json data in string format:
+01-09-2025 10:06:20: INFO: [{
+    "TestCaseName": "Empty GPS User Name Test",
+    "TestCaseDescription": "Test case where the GPS User Name field is left empty",
+    "InvalidData": {
+        "txtUserId": ""
+    }
+},
+{
+    "TestCaseName": "Invalid Employee ID Format Test",
+    "TestCaseDescription": "Test case where the Employee ID field does not follow the format MMYY-00000",
+    "InvalidData": {
+        "txtEmployeeId": ["123456789", "ABCD-EFGHI", "2001-12345"]
+    }
+},
+{
+    "TestCaseName": "Empty Employee ID Test",
+    "TestCaseDescription": "Test case where the Employee ID field is left empty",
+    "InvalidData": {
+        "txtEmployeeId": ""
+    }
+},
+{
+    "TestCaseName": "Invalid GPS User Name Length Exceed Test",
+    "TestCaseDescription": "Test case where the GPS User Name field length exceeds the maximum allowed characters",
+    "InvalidData": {
+        "txtUserId": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    }
+},
+{
+    "TestCaseName": "Invalid Employee ID Length Exceed Test",
+    "TestCaseDescription": "Test case where the Employee ID field length exceeds the maximum allowed characters",
+    "InvalidData": {
+        "txtEmployeeId": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+    }
+},
+{
+    "TestCaseName": "Empty GPS User Name and Employee ID Test",
+    "TestCaseDescription": "Test case where both GPS User Name and Employee ID fields are left empty",
+    "InvalidData": {
+        "txtUserId": "",
+        "txtEmployeeId": ""
+    }
+},
+{
+    "TestCaseName": "Invalid GPS User Name Data Type Test",
+    "TestCaseDescription": "Test case where the GPS User Name field contains invalid data type (e.g., numbers)",
+    "InvalidData": {
+        "txtUserId": ["12345", "67890"]
+    }
+},
+{
+    "TestCaseName": "Invalid Employee ID Data Type Test",
+    "TestCaseDescription": "Test case where the Employee ID field contains invalid data type (e.g., alphanumeric)",
+    "InvalidData": {
+        "txtEmployeeId": ["ABCD1234", "EFGH5678"]
+    }
+},
+{
+    "TestCaseName": "Special Characters in GPS User Name Test",
+    "TestCaseDescription": "Test case where the GPS User Name field contains special characters",
+    "InvalidData": {
+        "txtUserId": ["user@123", "user#456"]
+    }
+},
+{
+    "TestCaseName": "Special Characters in Employee ID Test",
+    "TestCaseDescription": "Test case where the Employee ID field contains special characters",
+    "InvalidData": {
+        "txtEmployeeId": ["12@34-56789", "ABCD#EFGHI"]
+    }
+}]
+01-09-2025 10:06:20: INFO: fields: ('txtUserId', '')
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', ['123456789', 'ABCD-EFGHI', '2001-12345'])
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', '')
+01-09-2025 10:06:20: INFO: fields: ('txtUserId', 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz')
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890')
+01-09-2025 10:06:20: INFO: fields: ('txtUserId', '')
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', '')
+01-09-2025 10:06:20: INFO: fields: ('txtUserId', ['12345', '67890'])
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', ['ABCD1234', 'EFGH5678'])
+01-09-2025 10:06:20: INFO: fields: ('txtUserId', ['user@123', 'user#456'])
+01-09-2025 10:06:20: INFO: fields: ('txtEmployeeId', ['12@34-56789', 'ABCD#EFGHI'])
+01-09-2025 10:06:25: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:27: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:30: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:34: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:37: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:43: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:46: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:49: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:52: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:55: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:56: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:06:56: INFO: Raw json data in string format:
+01-09-2025 10:06:56: INFO: [
+{
+  "Links": {},
+  "Buttons": {
+    "Send Reset Link": "//input[@id='btnSendLink']"
+  }
+}
+]
+01-09-2025 10:07:12: INFO: @@@@@@@@@@@@@@@@@@@@@@@@@@
+01-09-2025 10:07:12: INFO: {'Send Reset Link': "//input[@id='btnSendLink']"}
+01-09-2025 10:07:12: INFO: @@@@@@@@@@@@@@@@@@@@@@@@@@
+01-09-2025 10:07:13: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:07:13: INFO: Before clean input element from json:
+01-09-2025 10:07:13: INFO: {
+    "InputElements": {
+        "Enter GPS User Name": "//input[@id='txtUserId']",
+        "Employee ID in format MMYY-00000": "//input[@id='txtEmployeeId']"
+    }
+}
+01-09-2025 10:07:58: INFO: linkTextAnd_LocatorAndValidDatadict_dict 1: 
+01-09-2025 10:07:58: INFO: Proceeding Begins...
+01-09-2025 10:07:58: INFO: Proceeding with other actions...
+01-09-2025 10:07:58: INFO: Proceeding Begins...
+01-09-2025 10:07:59: INFO: Proceeding with other actions...
+01-09-2025 10:08:03: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:08:03: INFO: convert valid test cases response into lists:
+01-09-2025 10:08:03: INFO: {
+    "TestCaseName": "Navigate to Next Page",
+    "TestCaseDescription": "This test case is to verify the functionality of navigating to the next page after entering GPS User Name and Employee ID in the specified format and clicking on 'Send Reset Link' button.",
+    "ValidData": {
+        "Enter GPS User Name": "dyutid",
+        "Employee ID in format MMYY-00000": "1024-03159"
+    },
+    "TestSteps": [
+        {
+            "StepNumber": 1,
+            "StepDescription": "Load the web URL in a browser",
+            "Action": "Open the browser and navigate to https://ourgoalplan.co.in/ResetPassword.aspx"
+        },
+        {
+            "StepNumber": 2,
+            "StepDescription": "Enter GPS User Name",
+            "Action": "Enter 'dyutid' in the 'Enter GPS User Name' field"
+        },
+        {
+            "StepNumber": 3,
+            "StepDescription": "Enter Employee ID",
+            "Action": "Enter '1024-03159' in the 'Employee ID in format MMYY-00000' field"
+        },
+        {
+            "StepNumber": 4,
+            "StepDescription": "Click on Send Reset Link button",
+            "Action": "Click on the 'Send Reset Link' button"
+        }
+    ]
+}
+01-09-2025 10:08:05: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:08:05: INFO: New Link List: 
+01-09-2025 10:08:05: INFO: ****
+01-09-2025 10:08:05: INFO: ['https://ourgoalplan.co.in/Login.aspx', 'https://ourgoalplan.co.in/ResetPassword.aspx']
+01-09-2025 10:08:05: INFO: {"//input[@id='txtUserId']": 'dyutid', "//input[@id='txtEmployeeId']": '1024-03159'}
+01-09-2025 10:08:05: INFO: ****
+01-09-2025 10:08:05: INFO: linkTextAnd_LocatorAndValidDatadict_dict 2: 
+01-09-2025 10:08:05: INFO: Proceeding Begins...
+01-09-2025 10:08:06: INFO: Proceeding with other actions...
+01-09-2025 10:08:06: INFO: Proceeding Begins...
+01-09-2025 10:08:06: INFO: Proceeding with other actions...
+01-09-2025 10:08:06: INFO: linkxpathlocator: //input[@id='btnSendLink']
+01-09-2025 10:08:06: INFO: autURL https://ourgoalplan.co.in/ResetPassword.aspx already validated
+01-09-2025 10:08:08: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:08:09: INFO: Raw json data in string format:
+01-09-2025 10:08:09: INFO: [
+{
+  "Links": {
+    "Forgot Password": "//a[@id='lnkBtnResetPassword']",
+    "Mindfire Solutions": "//a[@href='http://www.mindfiresolutions.com']"
+  },
+  "Buttons": {
+    "Login": "//input[@id='btnLogin']"
+  }
+}
+]
+01-09-2025 10:08:24: INFO: Links now 2.2 are
+01-09-2025 10:08:24: INFO: linkText Forgot Password already validated
+01-09-2025 10:08:24: INFO: ****
+01-09-2025 10:08:24: INFO: ['https://ourgoalplan.co.in/Login.aspx', 'https://ourgoalplan.co.in/ResetPassword.aspx']
+01-09-2025 10:08:24: INFO: {"//input[@id='txtName']": 'dyutid', "//input[@id='txtPassword']": 'Maa@0804puja'}
+01-09-2025 10:08:24: INFO: ****
+01-09-2025 10:08:24: INFO: linkTextAnd_LocatorAndValidDatadict_dict 2: 
+01-09-2025 10:08:24: INFO: Proceeding Begins...
+01-09-2025 10:08:24: INFO: Proceeding with other actions...
+01-09-2025 10:08:24: INFO: Proceeding Begins...
+01-09-2025 10:08:24: INFO: Proceeding with other actions...
+01-09-2025 10:08:24: INFO: linkxpathlocator: //a[@href='http://www.mindfiresolutions.com']
+01-09-2025 10:08:26: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:08:26: INFO: Raw json data in string format:
+01-09-2025 10:08:26: INFO: [
+{
+  "Links": {
+    "Forgot Password": "/html/body/form/div/div[2]/div[1]/div[1]/a"
+  },
+  "Buttons": {
+    "Login": "/html/body/form/div/div[2]/div[1]/div[4]/input"
+  }
+}
+]
+01-09-2025 10:08:41: INFO: updatedAllLinksTextButtonsAndLocatorDict 1 is
+01-09-2025 10:08:41: INFO: All links now 
+01-09-2025 10:08:41: INFO: linkText Forgot Password already validated
+01-09-2025 10:08:41: INFO: ****
+01-09-2025 10:08:41: INFO: ['https://ourgoalplan.co.in/Login.aspx', 'https://ourgoalplan.co.in/ResetPassword.aspx']
+01-09-2025 10:08:41: INFO: {"//input[@id='txtName']": 'dyutid', "//input[@id='txtPassword']": 'Maa@0804puja'}
+01-09-2025 10:08:41: INFO: ****
+01-09-2025 10:08:41: INFO: linkTextAnd_LocatorAndValidDatadict_dict 2: 
+01-09-2025 10:08:41: INFO: Proceeding Begins...
+01-09-2025 10:08:41: INFO: Proceeding with other actions...
+01-09-2025 10:08:41: INFO: Proceeding Begins...
+01-09-2025 10:08:41: INFO: Proceeding with other actions...
+01-09-2025 10:08:41: INFO: linkxpathlocator: /html/body/form/div/div[2]/div[1]/div[4]/input
+01-09-2025 10:08:56: INFO: Could not click on button: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BED880D5+2992373]
+	(No symbol) [0x00007FF7BEA1BFD0]
+	(No symbol) [0x00007FF7BE8B590A]
+	(No symbol) [0x00007FF7BE90926E]
+	(No symbol) [0x00007FF7BE90955C]
+	(No symbol) [0x00007FF7BE9527D7]
+	(No symbol) [0x00007FF7BE92F3AF]
+	(No symbol) [0x00007FF7BE94F584]
+	(No symbol) [0x00007FF7BE92F113]
+	(No symbol) [0x00007FF7BE8FA918]
+	(No symbol) [0x00007FF7BE8FBA81]
+	GetHandleVerifier [0x00007FF7BEDE6A2D+3379789]
+	GetHandleVerifier [0x00007FF7BEDFC32D+3468109]
+	GetHandleVerifier [0x00007FF7BEDF0043+3418211]
+	GetHandleVerifier [0x00007FF7BEB7C78B+847787]
+	(No symbol) [0x00007FF7BEA2757F]
+	(No symbol) [0x00007FF7BEA22FC4]
+	(No symbol) [0x00007FF7BEA2315D]
+	(No symbol) [0x00007FF7BEA12979]
+	BaseThreadInitThunk [0x00007FFDB0CBE8D7+23]
+	RtlUserThreadStart [0x00007FFDB19DFBCC+44]
+

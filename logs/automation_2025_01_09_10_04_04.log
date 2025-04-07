@@ -1,0 +1,77 @@
+01-09-2025 10:04:04: INFO: Application Started
+01-09-2025 10:04:04: INFO: Main URL Entered: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:04: INFO: Chrome WebDriver Instance Started
+01-09-2025 10:04:10: INFO: Navigated to: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:10: INFO: Get the page content of: https://ourgoalplan.co.in/Login.aspx
+01-09-2025 10:04:17: INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+01-09-2025 10:04:17: INFO: Raw json data in string format:
+01-09-2025 10:04:17: INFO: [{
+    "TestCaseName": "Empty Username Field Test",
+    "TestCaseDescription": "Test case where the username field is left empty",
+    "InvalidData": {
+        "txtName": ""
+    }
+},
+{
+    "TestCaseName": "Empty Password Field Test",
+    "TestCaseDescription": "Test case where the password field is left empty",
+    "InvalidData": {
+        "txtPassword": ""
+    }
+},
+{
+    "TestCaseName": "Invalid Username Field Test",
+    "TestCaseDescription": "Test case where the username field contains invalid characters",
+    "InvalidData": {
+        "txtName": ["$%^&*", 123, "invalid!username"]
+    }
+},
+{
+    "TestCaseName": "Invalid Password Field Test",
+    "TestCaseDescription": "Test case where the password field contains invalid characters",
+    "InvalidData": {
+        "txtPassword": ["$%^&*", 123, "invalid!password"]
+    }
+},
+{
+    "TestCaseName": "Long Username Field Test",
+    "TestCaseDescription": "Test case where the username field value exceeds the maximum allowed length",
+    "InvalidData": {
+        "txtName": ["a".repeat(256)]
+    }
+},
+{
+    "TestCaseName": "Long Password Field Test",
+    "TestCaseDescription": "Test case where the password field value exceeds the maximum allowed length",
+    "InvalidData": {
+        "txtPassword": ["a".repeat(256)]
+    }
+},
+{
+    "TestCaseName": "Special Characters Username Field Test",
+    "TestCaseDescription": "Test case where the username field contains special characters",
+    "InvalidData": {
+        "txtName": ["$%^&*", "@username", "user#name"]
+    }
+},
+{
+    "TestCaseName": "Special Characters Password Field Test",
+    "TestCaseDescription": "Test case where the password field contains special characters",
+    "InvalidData": {
+        "txtPassword": ["$%^&*", "@password", "pass#word"]
+    }
+},
+{
+    "TestCaseName": "Username with Leading/Trailing Spaces Test",
+    "TestCaseDescription": "Test case where the username field contains leading or trailing spaces",
+    "InvalidData": {
+        "txtName": [" username", "username ", " username "]
+    }
+},
+{
+    "TestCaseName": "Password with Leading/Trailing Spaces Test",
+    "TestCaseDescription": "Test case where the password field contains leading or trailing spaces",
+    "InvalidData": {
+        "txtPassword": [" password", "password ", " password "]
+    }
+}]

@@ -1,0 +1,50 @@
+2025-04-03 11:50:07,167 - INFO - Starting new test run at 20250403_115007
+2025-04-03 11:50:07,167 - INFO - Navigating to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-03 11:50:14,382 - INFO - Capturing initial page state...
+2025-04-03 11:50:14,651 - INFO - Screenshot saved to screenshots/before_login_20250403_115014.png
+2025-04-03 11:50:14,651 - INFO - --- Current page state (before_login) ---
+2025-04-03 11:50:14,654 - INFO - Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-04-03 11:50:14,739 - INFO - Screenshot saved to screenshots/page_state_before_login_20250403_115014.png
+2025-04-03 11:50:14,755 - INFO - Found 80 elements on page
+2025-04-03 11:50:14,804 - INFO - Element 1: <html> id='' class='' text='Login
+Username : Admin
+Password : admin123
+Usernam...'
+2025-04-03 11:50:14,821 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 11:50:14,845 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 11:50:14,868 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 11:50:14,883 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 11:50:14,909 - INFO - Element 6: <title> id='' class='' text=''
+2025-04-03 11:50:14,928 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 11:50:14,956 - INFO - Element 8: <link> id='' class='' text=''
+2025-04-03 11:50:14,974 - INFO - Element 9: <link> id='' class='' text=''
+2025-04-03 11:50:15,000 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 11:50:15,000 - INFO - --- End of page state ---
+2025-04-03 11:50:15,002 - INFO - Analyzing login page...
+2025-04-03 11:50:16,838 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:50:16,842 - INFO - Login attempt with username: Admin
+2025-04-03 11:50:16,842 - INFO - Using selectors - Username: input[name='username'], Password: input[name='password'], Submit: button[type='submit']
+2025-04-03 11:50:20,096 - INFO - Screenshot saved to screenshots/after_login_20250403_115019.png
+2025-04-03 11:50:20,096 - INFO - --- Current page state (after_login) ---
+2025-04-03 11:50:20,099 - INFO - Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-04-03 11:50:20,219 - INFO - Screenshot saved to screenshots/page_state_after_login_20250403_115020.png
+2025-04-03 11:50:20,253 - INFO - Found 411 elements on page
+2025-04-03 11:50:20,348 - INFO - Element 1: <html> id='' class='' text='Admin
+PIM
+Leave
+Time
+Recruitment
+My Info
+Performan...'
+2025-04-03 11:50:20,372 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-03 11:50:20,397 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-03 11:50:20,414 - INFO - Element 4: <meta> id='' class='' text=''
+2025-04-03 11:50:20,447 - INFO - Element 5: <meta> id='' class='' text=''
+2025-04-03 11:50:20,474 - INFO - Element 6: <title> id='' class='' text=''
+2025-04-03 11:50:20,501 - INFO - Element 7: <link> id='' class='' text=''
+2025-04-03 11:50:20,532 - INFO - Element 8: <link> id='' class='' text=''
+2025-04-03 11:50:20,555 - INFO - Element 9: <link> id='' class='' text=''
+2025-04-03 11:50:20,587 - INFO - Element 10: <link> id='' class='' text=''
+2025-04-03 11:50:20,587 - INFO - --- End of page state ---
+2025-04-03 11:50:22,160 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 11:50:22,162 - ERROR - Login failed: Unable to determine login status with certainty. The page appears to be a dashboard, but lacks user-specific information.

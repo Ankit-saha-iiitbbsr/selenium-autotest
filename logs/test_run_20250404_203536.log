@@ -1,0 +1,52 @@
+2025-04-04 20:35:36,173 - INFO - Starting new test run at 20250404_203536
+2025-04-04 20:35:36,173 - INFO - Starting test generation for URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:35:36,173 - INFO - Navigating to URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:35:41,958 - INFO - Capturing initial page state...
+2025-04-04 20:35:42,156 - INFO - Screenshot saved to screenshots/before_login_20250404_203542.png
+2025-04-04 20:35:42,156 - INFO - --- Current page state (before_login) ---
+2025-04-04 20:35:42,159 - INFO - Current URL: http://testphp.vulnweb.com/login.php
+2025-04-04 20:35:42,230 - INFO - Screenshot saved to screenshots/page_state_before_login_20250404_203542.png
+2025-04-04 20:35:42,243 - INFO - Found 98 elements on page
+2025-04-04 20:35:42,298 - INFO - Element 1: <html> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:42,313 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 20:35:42,338 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 20:35:42,354 - INFO - Element 4: <title> id='' class='' text=''
+2025-04-04 20:35:42,383 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 20:35:42,410 - INFO - Element 6: <script> id='' class='' text=''
+2025-04-04 20:35:42,452 - INFO - Element 7: <body> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:42,488 - INFO - Element 8: <div> id='mainLayer' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:42,522 - INFO - Element 9: <div> id='masthead' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:42,553 - INFO - Element 10: <h1> id='siteName' class='' text=''
+2025-04-04 20:35:42,554 - INFO - --- End of page state ---
+2025-04-04 20:35:42,555 - INFO - Analyzing login page...
+2025-04-04 20:35:46,989 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:35:46,995 - INFO - Login attempt with username: test
+2025-04-04 20:35:46,995 - INFO - Using selectors - Username: input[name='uname'], Password: input[name='pass'], Submit: input[type='submit'][value='login']
+2025-04-04 20:35:50,571 - INFO - Screenshot saved to screenshots/after_login_20250404_203550.png
+2025-04-04 20:35:50,571 - INFO - --- Current page state (after_login) ---
+2025-04-04 20:35:50,574 - INFO - Current URL: http://testphp.vulnweb.com/userinfo.php
+2025-04-04 20:35:50,650 - INFO - Screenshot saved to screenshots/page_state_after_login_20250404_203550.png
+2025-04-04 20:35:50,658 - INFO - Found 110 elements on page
+2025-04-04 20:35:50,707 - INFO - Element 1: <html> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:50,728 - INFO - Element 2: <head> id='' class='' text=''
+2025-04-04 20:35:50,749 - INFO - Element 3: <meta> id='' class='' text=''
+2025-04-04 20:35:50,777 - INFO - Element 4: <title> id='' class='' text=''
+2025-04-04 20:35:50,798 - INFO - Element 5: <link> id='' class='' text=''
+2025-04-04 20:35:50,817 - INFO - Element 6: <script> id='' class='' text=''
+2025-04-04 20:35:50,888 - INFO - Element 7: <body> id='' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:50,937 - INFO - Element 8: <div> id='mainLayer' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:50,957 - INFO - Element 9: <div> id='masthead' class='' text='TEST and Demonstration site for Acunetix Web Vulne...'
+2025-04-04 20:35:50,985 - INFO - Element 10: <h1> id='siteName' class='' text=''
+2025-04-04 20:35:50,985 - INFO - --- End of page state ---
+2025-04-04 20:35:53,960 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:35:53,962 - INFO - Login successful!
+2025-04-04 20:35:53,962 - INFO - Generating test cases...
+2025-04-04 20:35:53,962 - INFO - Generating test cases for the current page...
+2025-04-04 20:35:54,052 - INFO - Screenshot saved to screenshots/before_test_case_generation_20250404_203553.png
+2025-04-04 20:35:54,052 - INFO - Sending request to LLM for test case generation...
+2025-04-04 20:35:54,197 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-04 20:35:54,197 - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-04-04 20:36:10,342 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 20:36:10,344 - INFO - Received response from LLM
+2025-04-04 20:36:10,345 - ERROR - Failed to parse JSON for test cases
+2025-04-04 20:36:10,345 - ERROR - No test cases generated
